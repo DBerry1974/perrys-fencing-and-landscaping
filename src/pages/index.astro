@@ -1,0 +1,349 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero/Hero.astro";
+import WideHero from "../components/Hero/Hero.astro";
+import ImageBlock from "../components/ImageBlock.astro";
+import DefaulContentBlock from "../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../components/Content/ImageOnLeft.astro";
+import CallToAction from "../components/CallToAction.astro";
+import Button from "../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../components/Headings/SubTitle.astro";
+import heroBg from "../assets/images/bg-img1.png";
+import extension3 from "../assets/images/extension3.png";
+import fence1 from "../assets/images/fencing1.png";
+import fence2 from "../assets/images/fencing2.png";
+
+import returf1 from "../assets/images/returf2.png";
+import decking1 from "../assets/images/deck1.png";
+import lawn1 from "../assets/images/artificial2.png";
+import design1 from "../assets/images/design2.png";
+import work1 from "../assets/images/workimg1.png";
+import work2 from "../assets/images/workimg2.png";
+import work3 from "../assets/images/workimg3.png";
+import work4 from "../assets/images/workimg4.png";
+import work5 from "../assets/images/workimg5.png";
+import work6 from "../assets/images/workimg6.png";
+import extension9 from "../assets/images/extension9.png";
+import extension7 from "../assets/images/extension7.png";
+import clearance from "../assets/images/clearance.png";
+---
+
+<Layout title={`Perry's Fencing & Landscaping Services | Covering Hertfordshire, Bedfordshire, Essex and North London`} description={`Elevate your outdoor space with Perry's Fencing and Landscaping. Specialists in fencing and landscaping services across Bedfordshire, Hertfordshire, Essex, and North London.`}>
+
+
+
+
+<Hero
+title="Perry's Fencing & Landscaping Services"
+sub="Complete Fencing & Landscaping Solutions"
+
+image={heroBg}
+
+>
+<div slot="heroContent"> 
+  <p class="mt-6 mb-4 lg:text-xl">
+    Perry's Fencing and Landscaping are your premier destination for expert fencing and landscaping services in Bedfordshire, Hertfordshire, Essex, and North London. As specialists in the field, we pride ourselves on delivering top-notch solutions tailored to transform your outdoor spaces into stunning havens. 
+  </p> 
+  <p class="lg:text-xl">
+    Whether you're looking to enhance your garden with beautiful fencing, create a lush landscape with our landscaping services, or both, our dedicated team is here to exceed your expectations.
+  </p> 
+  
+</div>  
+</Hero>
+		
+<div class="lg:mt-10">
+ 
+	<ImageOnRight
+    
+    title="Transform Your Outdoor Space"
+    image={fence2} 
+    imageAlt="Fencing & Landscaping Services"
+    height={580} 
+    width={600}
+    href="/"
+    linkText="GET A FREE QUOTE TODAY"
+  >
+    <Fragment slot="content" >
+      <p class="my-4">
+        Our team is here to revolutionise your outdoor living experience, specializing in bespoke fencing and landscaping services across Bedfordshire, Hertfordshire, Essex, and North London.
+
+
+      </p>
+      <p class="mb-4">
+        Let us guide you through a journey of creativity and expertise as we collaborate to design and install the perfect fencing solution to define and protect your property. From classic elegance to contemporary flair, our fencing options are tailored to suit your style and needs.
+      </p>
+ 
+      <p class="mb-4">
+        Discover the potential of your outdoor space with our professional landscaping services. Whether you envision a tranquil garden retreat, a vibrant floral paradise, or a versatile entertainment area, we have the skills and creativity to bring your vision to life. With meticulous attention to detail and a commitment to excellence, we'll transform your outdoor space into a sanctuary you'll love to escape to.
+      </p>
+ 
+    </Fragment>
+  </ImageOnRight>
+
+</div>
+
+
+
+  <div class="mx-auto max-w-7xl px-2 overflow-hidden pb-20">
+    
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 mt-16">
+      <div
+        class="grid min-h-full grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 gap-8">
+     <!-- START SERVICE -->   
+    <div class="relative flex rounded-lg overflow-hidden">
+      <Image
+        src={fence1}
+        alt="fencing"
+        width={600}
+        height={400}
+        class="absolute inset-0 h-full w-full object-cover object-center"
+      />
+      <div class="relative flex w-full flex-col items-start justify-between bg-black bg-opacity-60 px-6 py-6 lg:py-24">
+        <h2 class="text-2xl lg:text-6xl font-bold text-gray-300 mb-4">
+          Fencing
+         
+        </h2>
+        
+          <p class="text-white text-xl lg:text-2xl">
+            Secure your property with our sturdy and reliable fencing solutions.
+          </p>
+       
+        <a
+          href="/"
+          class="mt-4 rounded-md bg-gradient-to-b from-brand-primary to-brand-secondary py-2.5 px-4 text-lg font-medium text-white hover:bg-gradient-to-t hover:from-brand-primary hover:to-brand-secondary"
+        >
+          Find Out More
+        </a>
+      </div>
+    </div>
+       <!-- END SERVICE -->   
+
+          <!-- START SERVICE -->   
+    <div class="relative flex rounded-lg overflow-hidden">
+      <Image
+        src={decking1}
+        alt="fencing"
+        width={600}
+        height={400}
+        class="absolute inset-0 h-full w-full object-cover object-center"
+      />
+      <div class="relative flex w-full flex-col items-start justify-between bg-black bg-opacity-60 px-6  py-6 lg:py-24">
+        <h2 class="text-2xl lg:text-6xl font-bold text-gray-300 mb-4">
+          Decking
+         
+        </h2>
+        
+          <p class="text-white text-xl lg:text-2xl">
+            Create inviting and functional outdoor spaces with our durable and beautifully crafted decking solutions.
+          </p>
+       
+        <a
+          href="/"
+          class="mt-4 rounded-md bg-gradient-to-b from-brand-primary to-brand-secondary py-2.5 px-4 text-lg font-medium text-white hover:bg-gradient-to-t hover:from-brand-primary hover:to-brand-secondary"
+        >
+          Find Out More
+        </a>
+      </div>
+    </div>
+       <!-- END SERVICE --> 
+  </div>
+
+        <!-- START SERVICE -->   
+        <div class="relative flex rounded-lg overflow-hidden my-10">
+          <Image
+            src={design1}
+            alt="fencing"
+            width={600}
+            height={400}
+            class="absolute inset-0 h-full w-full object-cover object-center"
+          />
+          <div class="relative flex w-full flex-col items-start justify-between bg-black bg-opacity-60 px-6  py-6 lg:py-24">
+            <h2 class="text-2xl lg:text-6xl font-bold text-gray-300 mb-4">
+              Patio & Garden Design
+             
+            </h2>
+            
+              <p class="text-white text-xl lg:text-2xl">
+                
+                Elevate your outdoor living spaces with our expertly designed patios and gardens including our stylish pergola installations.
+              </p>
+           
+            <a
+              href="/"
+              class="mt-4 rounded-md bg-gradient-to-b from-brand-primary to-brand-secondary py-2.5 px-4 text-lg font-medium text-white hover:bg-gradient-to-t hover:from-brand-primary hover:to-brand-secondary"
+            >
+              Find Out More
+            </a>
+          </div>
+        </div>
+           <!-- END SERVICE --> 
+
+           <div
+           class="grid min-h-full grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 gap-8">
+        <!-- START SERVICE -->   
+       <div class="relative flex rounded-lg overflow-hidden">
+         <Image
+           src={returf1}
+           alt="fencing"
+           width={600}
+           height={400}
+           class="absolute inset-0 h-full w-full object-cover object-center"
+         />
+         <div class="relative flex w-full flex-col items-start justify-between bg-black bg-opacity-60 px-6  py-6 lg:py-24">
+           <h2 class="text-2xl lg:text-6xl font-bold text-gray-300 mb-4">
+            Re-turfing
+            
+           </h2>
+           
+             <p class="text-white text-xl lg:text-2xl">
+             
+              Renew and refresh your lawn with our professional re-turfing services.
+             </p>
+          
+           <a
+             href="/"
+             class="mt-4 rounded-md bg-gradient-to-b from-brand-primary to-brand-secondary py-2.5 px-4 text-lg font-medium text-white hover:bg-gradient-to-t hover:from-brand-primary hover:to-brand-secondary"
+           >
+             Find Out More
+           </a>
+         </div>
+       </div>
+          <!-- END SERVICE -->   
+   
+             <!-- START SERVICE -->   
+       <div class="relative flex rounded-lg overflow-hidden">
+         <Image
+           src={lawn1}
+           alt="fencing"
+           width={600}
+           height={400}
+           class="absolute inset-0 h-full w-full object-cover object-center"
+         />
+         <div class="relative flex w-full flex-col items-start justify-between bg-black bg-opacity-60 px-6  py-6 lg:py-24">
+           <h2 class="text-2xl lg:text-6xl font-bold text-gray-300 mb-4">
+            Artificial Lawns
+            
+           </h2>
+           
+             <p class="text-white text-xl lg:text-2xl">
+            
+              Enjoy the beauty of a lush green lawn all year round with our high-quality artificial turf options.             </p>
+          
+           <a
+             href="/"
+             class="mt-4 rounded-md bg-gradient-to-b from-brand-primary to-brand-secondary py-2.5 px-4 text-lg font-medium text-white hover:bg-gradient-to-t hover:from-brand-primary hover:to-brand-secondary"
+           >
+             Find Out More
+           </a>
+         </div>
+       </div>
+          <!-- END SERVICE --> 
+
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="mx-auto bg-gray-800 px-6 lg:mt-10  overflow-hidden py-20">
+    <h2 class="text-white text-2xl lg:text-6xl font-bold  mb-10">Our Work</h2>
+  <p class="text-white text-lg lg:text-xl">Take a look at some of our projects and the team at work.</p>
+  <div
+  class="mt-12 grid w-full lg:gap-10 lg:grid-cols-3"
+  >
+  <div class="flex flex-col  mb-10">
+    <Image
+      src={work1}
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp"
+    />
+
+  </div>
+
+  
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work2}
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp"
+    />
+
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work3}
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+        format="webp"
+    />
+ 
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work4}
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp" 
+    />
+ 
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work5}
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp" 
+    />
+
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work6}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+        format="webp"
+    />
+ 
+  </div>
+
+  
+  </div>
+
+
+  
+  </div>
+
+ 
+  
+
+  
+  <div class="max-w-7xl mx-auto px-6">
+ 
+
+</div>
+
+
+</Layout>  
+

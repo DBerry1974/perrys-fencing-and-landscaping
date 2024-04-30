@@ -1,0 +1,54 @@
+---
+import Footer from "../components/Footer/Footer.astro"
+import Header from "../components/Header/Header.astro";
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+function removeTrailingSlash(str: string) {
+  return str.replace(/\/+$/, '');
+}
+
+const {
+  title,
+  description,
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={removeTrailingSlash(Astro.url.href)} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:type" content="Perry's Fencing and Landscaping" />
+    <meta property="og:description" content="Perry's Fencing and Landscaping">
+    <meta property="og:description" content={description} />
+    <meta property="twitter:title" content="Perry's Fencing and Landscaping">
+    <meta property="twitter:description" content="Perry's Fencing and Landscaping">
+    <meta name="description" content={description} />
+
+    <title>{title}</title>
+
+
+  </head>
+  <body>
+
+   <Header />
+    <slot />
+    <Footer />
+    
+  </body>
+</html>

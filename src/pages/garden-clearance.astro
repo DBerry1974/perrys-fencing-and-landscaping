@@ -1,0 +1,269 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero/Hero.astro";
+import WideHero from "../components/Hero/Hero.astro";
+import ImageBlock from "../components/ImageBlock.astro";
+import DefaulContentBlock from "../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../components/Content/ImageOnLeft.astro";
+import CallToAction from "../components/CallToAction.astro";
+import Button from "../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../components/Headings/SubTitle.astro";
+import heroBg from "../assets/images/clearance.png";
+import extension3 from "../assets/images/extension3.png";
+import fence1 from "../assets/images/fence1.png";
+import returf1 from "../assets/images/returf1.png";
+import decking1 from "../assets/images/decking1.png";
+import lawn1 from "../assets/images/lawn1.png";
+import design1 from "../assets/images/design1.png";
+import work1 from "../assets/images/work1.png";
+import work2 from "../assets/images/work2.png";
+import work3 from "../assets/images/work3.png";
+import work4 from "../assets/images/work4.png";
+import work5 from "../assets/images/work5.png";
+import work6 from "../assets/images/work6.png";
+import work7 from "../assets/images/work7.png";
+
+import garden1 from "../assets/images/garden1.png";
+
+
+---
+
+<Layout title={`RAU Services | Garden Clearance Services Hertfordshire`} description={`Providing premium Home, Garden and Landscaping Services. Garden Clearance in Hertfordshire.`}>
+
+
+
+
+<Hero
+title="Garden Clearance Hertfordshire"
+sub="Reclaim Your Garden"
+linkText="Get a Quote Today"
+href="/contact"
+image={heroBg}
+
+>
+<div slot="heroContent"> 
+  <p class="my-6 lg:text-lg">
+    Transform your outdoor space with RAU Services' comprehensive garden clearance solutions. We understand the importance of a tidy and inviting garden, which is why our dedicated team specializes in clearing and rejuvenating outdoor areas, ensuring a fresh and pristine environment.
+
+
+  </p>  
+  
+</div>  
+</Hero>
+		
+<div class="lg:mt-20">
+ 
+	<ImageOnRight
+    
+    title="Custom Decking Services in Hertfordshire"
+    image={garden1} 
+    imageAlt="Quality, Durability, and Peace of Mind"
+    height={580} 
+    width={600}
+    href="/contact"
+    linkText="GET A FREE QUOTE TODAY"
+  >
+    <Fragment slot="content" >
+      
+      <p class="mb-4">
+        Embracing the challenge of even the most neglected spaces, our team at RAU Services takes pride in delivering tailored solutions to suit your garden's unique needs. We go beyond mere clearance, offering expert advice on garden rejuvenation and suggesting potential enhancements to maximize your outdoor area's beauty and functionality.
+
+
+      </p>
+ 
+      <p class="mb-4">
+        From clearing tangled vegetation to suggesting creative landscaping ideas, our dedicated professionals aim to not only declutter but also inspire a renewed vision for your garden. We believe in empowering you with choices, ensuring that the post-clearance landscape is not just clean but also set up for potential transformations, allowing your imagination to flourish. Count on RAU Services to not only declutter but to also guide you towards an outdoor space that reflects your style and aspirations.
+    </p>
+ 
+    </Fragment>
+  </ImageOnRight>
+
+</div>
+
+<div class="mt-20">
+ 
+  <CallToAction
+    background={heroBg}  
+    title="Revive Your Garden Today"
+    ImageAlt="garden clearance in Hertfordshire"
+    linkText="START YOUR PROJECT TODAY"
+    href="/contact">
+    <div slot="ctaContent"> 
+      <p class="mt-6 mb-4 lg:text-lg">
+        Let RAU Services help you restore the beauty of your outdoor space. Whether it's a thorough garden cleanup or a complete transformation, our dedicated team is ready to bring new life to your garden. 
+    </p>
+      <p class="mb-4 lg:text-lg">
+        Contact us now for a personalized consultation and let's embark on a journey to revitalize your outdoor haven. Experience the difference with RAU Services – your trusted partner in creating a refreshed and welcoming landscape.
+    </p>
+    </div>
+  </CallToAction>
+</div>
+
+  <div class="bg-white my-10 lg:mt-20 lg:mb-20"> 
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto lg:text-center">
+        <h2 class="block lg:text-center font-semibold text-brand-primary text-2xl lg:text-4xl">Your Top Choice for Garden Clearance in Hertfordshire</h2>
+        
+        <p class="mt-6 lg:text-lg  text-gray-600">At RAU Services, we take pride in delivering tailored garden clearance solutions specifically designed for Hertfordshire. Our dedication to precision and customer satisfaction ensures that each clearance project we undertake transforms your outdoor space into a pristine and welcoming environment.</p>
+      </div>
+      <div class="mx-auto mt-16 lg:max-w-7xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold  text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+                  
+                  
+              </div>
+              <span class="text-xl">Expertise</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+                Our team has extensive experience in clearing gardens of various sizes and complexities. We possess the expertise needed to ensure that your garden clearance is thorough, leaving behind a refreshed and clutter-free space.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              <span class="text-xl">  Quality Execution</span>
+
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+              
+We use only top-quality tools and methods in our work, ensuring that your garden is cleared efficiently and effectively. With meticulous attention to detail, we clear debris, overgrown greenery, and unwanted items, leaving your garden in immaculate condition.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+             <span class="text-xl">Competitive pricing</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+                We offer competitive pricing on all our garden clearance services, ensuring that you receive exceptional value for the quality of work delivered.
+
+            </dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              <span class="text-xl"> Customer Satisfaction</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+                We prioritize excellent customer service, working closely with you to meet your garden clearance needs while ensuring your complete satisfaction with our workmanship. Trust RAU Services to provide a comprehensive and satisfying garden clearance experience.</dd>
+          </div>
+
+       
+          
+        </dl>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mx-auto bg-gray-800 px-6 lg:mt-10  overflow-hidden py-20">
+    <h2 class="text-white text-2xl lg:text-6xl font-bold  mb-10">Our Work</h2>
+  <p class="text-white text-lg lg:text-xl">Take a look at some of our projects and the team at work.</p>
+  <div
+  class="mt-12 grid w-full lg:gap-10 lg:grid-cols-3"
+  >
+  <div class="flex flex-col  mb-10">
+    <Image
+      src={work1}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp"
+    />
+
+  </div>
+
+  
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work2}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp"
+    />
+
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work3}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+        format="webp"
+    />
+ 
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work4}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp" 
+    />
+ 
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work5}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp" 
+    />
+
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work6}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+        format="webp"
+    />
+ 
+  </div>
+
+  
+  </div>
+
+
+  <div class="mx-auto text-center">
+    <a class="block sm:inline-flex items-center text-center uppercase no-underline bg-brand-dark-green px-5 py-3 text-sm sm:text-lg tracking-wider font-bold hover:bg-gray-500 shadow-md text-white rounded-lg" href="/contact">Get Your Project Started Today</a>
+    </div>
+
+  </div>
+
+ 
+
+</Layout>  
+

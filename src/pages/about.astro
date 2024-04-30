@@ -1,0 +1,122 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero/Hero.astro";
+import DefaulContentBlock from "../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../components/Content/ImageOnLeft.astro";
+import CallToAction from "../components/CallToAction.astro";
+import Button from "../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../components/Headings/SubTitle.astro";
+import BigQuote from "../components/BigQuote.astro";
+
+import heroBg from "../assets/images/family4.png";
+import extension5 from "../assets/images/extension5.png";
+import extension6 from "../assets/images/extension6.png";
+import extension10 from "../assets/images/extension10.png";
+
+---
+
+<Layout title={`About Us | RAU Services`} description={`Providing premium Home, Garden and Landscaping Services in Hertfordshire.`}>
+
+
+
+
+<Hero 
+title="RAU SERVICES"
+sub="Building Trust, Building Relationships"
+linkText="Get a Free Quote Today"
+href="/contact"
+image={heroBg}
+
+>
+<div slot="heroContent"> 
+  <p class="mt-6 mb-4 lg:text-lg">
+    Introducing RAU Services, your trusted family-run building and landscaping company dedicated to bringing your visions to life. With a legacy of craftsmanship and a commitment to excellence, we pride ourselves on delivering top-notch services tailored to meet your unique needs.
+  </p>
+ 
+
+</div>  
+</Hero>
+		
+<div class="mt-20">   
+	<ImageOnRight
+    
+    title="Building Together, Step by Step"
+    image={extension10} 
+    imageAlt="Home and landscaping services Hertfordshire"
+    height={600} 
+    width={600}
+  >
+    <Fragment slot="content" >
+      <p class="my-4">
+        At RAU Services, we understand the importance of a personal touch, which is why we prioritize direct and timely communication. Our team ensures quick responses to your inquiries, making the process seamless and stress-free. Unlike automated systems, we guarantee that you will always be in contact with a knowledgeable and friendly human being, ready to assist you every step of the way.
+    </p>
+      <p class="mb-4">
+        Whether you're dreaming of a stunning landscape transformation or contemplating a building project, our skilled professionals offer free estimates to help you plan and budget effectively. We believe in transparency and strive to provide accurate assessments that align with your vision and financial considerations.
+        
+    </p>
+    <p class="mb-4">
+     
+      With RAU Services, you're not just a client; you're part of our extended family. Experience the difference of working with a company that values open communication, expertise, and a personal connection. Let us turn your ideas into reality – because your satisfaction is our ultimate goal.
+  </p>
+  
+     
+    
+    </Fragment>
+  </ImageOnRight>
+</div>
+
+
+
+  <section class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <figure class="mx-auto max-w-2xl">
+      <p class="sr-only">5 out of 5 stars</p>
+      <div class="flex gap-x-1 text-yellow-600">
+        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+        </svg>
+        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+        </svg>
+        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+        </svg>
+        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+        </svg>
+        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <blockquote class="mt-10 text-xl font-semibold leading-8 tracking-tight text-gray-900 sm:text-2xl sm:leading-9">
+        <p>“RAU where an absolute delight to work with on our Garden refurb / landscaping. The team were polite, courteous and always communicated well with us throughout the project, nothing was too big for them and they always made sure we were happy with the work. I would recommend using James, Rich and and the team and because of their great job we will be asking them to the work required on the front of the house.”</p>
+      </blockquote>
+      <figcaption class="mt-10 flex items-center gap-x-6">
+        
+        <div class="text-sm leading-6">
+          <div class="font-semibold text-gray-900">Nigel</div>
+          <div class="mt-0.5 text-gray-600">Landscaping Project</div>
+        </div>
+      </figcaption>
+    </figure>
+  </section>
+  
+
+
+  <CallToAction
+  background={extension6}  
+  title="Let's Bring Your Ideas to Life Together!"
+  ImageAlt="Get a Free No Obligation Quote"
+  linkText="GET A FREE QUOTE"
+  href="/contact">
+  <div slot="ctaContent"> 
+    <p class="mt-6 mb-4 lg:text-lg">
+      At RAU Services, we're more than just a company – we're your partners in creating the spaces you dream of. Reach out to our friendly team today, and let's start turning your dreams into reality. We're here to provide guidance, support, and expertise every step of the way. Get in touch for a personalized conversation about your next project!
+    </p>
+  </div>
+  </CallToAction>
+
+</Layout>  
+

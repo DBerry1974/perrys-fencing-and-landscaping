@@ -1,0 +1,383 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero/Hero.astro";
+import WideHero from "../components/Hero/Hero.astro";
+import ImageBlock from "../components/ImageBlock.astro";
+import DefaulContentBlock from "../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../components/Content/ImageOnLeft.astro";
+import CallToAction from "../components/CallToAction.astro";
+import Button from "../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../components/Headings/SubTitle.astro";
+import heroBg from "../assets/images/artificial1.png";
+import extension3 from "../assets/images/extension3.png";
+import fence1 from "../assets/images/fence1.png";
+import fence2 from "../assets/images/fence2.jpg";
+
+import returf1 from "../assets/images/returf1.png";
+import decking1 from "../assets/images/decking1.png";
+import lawn1 from "../assets/images/lawn1.png";
+import design1 from "../assets/images/design1.png";
+import work1 from "../assets/images/work1.png";
+import work2 from "../assets/images/work2.png";
+import work3 from "../assets/images/work3.png";
+import work4 from "../assets/images/work4.png";
+import work5 from "../assets/images/work5.png";
+import work6 from "../assets/images/work6.png";
+import work7 from "../assets/images/work7.png";
+import patio2 from "../assets/images/patio2.jpg";
+import patio3 from "../assets/images/patio3.jpg";
+
+
+
+---
+
+<Layout title={`RAU Services | Arificial Lawns Hertfordshire`} description={`Providing premium Home, Garden and Landscaping Services. Arificial Lawns in Hertfordshire.`}>
+
+
+
+
+<Hero
+title="Arificial Lawns Hertfordshire"
+sub="Year Round Greenery"
+linkText="Get a Quote Today"
+href="/contact"
+image={heroBg}
+
+>
+<div slot="heroContent"> 
+  <p class="mt-6 mb-4 lg:text-lg">
+    Embracing innovation and convenience, our expertly crafted synthetic turf redefines traditional landscaping, offering a vibrant and hassle-free alternative to natural grass.
+    </p>
+  <p class="mb-10 lg:text-lg">
+    Crafted from premium materials, our artificial lawns replicate the lushness and realism of natural grass, without the demanding upkeep. With lifelike textures and rich green hues, our synthetic turf remains perpetually green throughout the seasons. Engineered for durability and weather resistance, our artificial lawns ensure lasting beauty and functionality.
+
+  </p>  
+  
+</div>  
+</Hero>
+		
+<div class="lg:mt-20">
+ 
+	<ImageOnRight
+    
+    title="Artificial Lawns in Hertfordshire"
+    image={work5} 
+    imageAlt="Artificial Lawns in Hertfordshire"
+    height={600} 
+    width={600}
+    href="/contact"
+    linkText="GET A FREE QUOTE TODAY"
+  >
+    <Fragment slot="content" >
+      <p class="my-4">
+        At RAU Services, we specialise in creating bespoke artificial lawns to elevate your outdoor space. Our commitment to excellence ensures top-quality synthetic turf solutions tailored to meet your requirements.
+
+
+      </p>
+      <p class="mb-4">
+        Our artificial lawns offer a low-maintenance, evergreen alternative to natural grass. Crafted from premium materials, our synthetic turf guarantees a vibrant and resilient lawn, providing a consistently appealing appearance.
+
+      </p>
+      <p class="mb-4">
+        Experience the convenience and allure of our artificial lawns, perfectly tailored to enhance your outdoor space. Our dedication to delivering top-notch artificial lawns promises durability, vibrancy, and effortless beauty for your outdoor area.
+      </p>
+ 
+ 
+    </Fragment>
+  </ImageOnRight>
+
+</div>
+
+<div class="bg-white my-10 lg:mt-20 lg:mb-20"> 
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto lg:text-center">
+      <h2 class="block lg:text-center font-semibold text-brand-primary text-2xl lg:text-4xl">The Benefits of Choosing Artificial Grass</h2>
+    
+    </div>
+    <div class="mx-auto mt-16 lg:max-w-7xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold  text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                </svg>
+                
+                
+            </div>
+            <span class="text-xl"> Low Maintenance</span>
+          </dt>
+          <dd class="mt-2 text-base text-gray-600">
+           Artificial lawns offer the advantage of minimal upkeep compared to natural grass. Say goodbye to mowing, watering, and fertilizing, as synthetic turf requires no regular maintenance, saving you time and effort while keeping your lawn looking pristine year-round.            </dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <span class="text-xl">Durability</span>
+
+          </dt>
+          <dd class="mt-2 text-base text-gray-600">
+            Synthetic turf is engineered to withstand heavy foot traffic, extreme weather conditions, and various outdoor activities without losing its lush appearance. With its robust construction, artificial lawns remain resilient and retain their vibrant green hue despite continuous use.
+
+</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+           <span class="text-xl"> Water Conservation</span>
+          </dt>
+          <dd class="mt-2 text-base text-gray-600">
+           One of the significant benefits of artificial lawns is their water-saving aspect. Eliminate the need for excessive watering, contributing to water conservation efforts while still enjoying a consistently green and beautiful outdoor space.
+
+</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <span class="text-xl">All-Year Appeal</span>
+          </dt>
+          <dd class="mt-2 text-base text-gray-600">
+            Unlike natural grass that can turn brown or become patchy during certain seasons, artificial lawns maintain their fresh and verdant look throughout the year. Regardless of the weather or climate, synthetic turf offers a consistently attractive appearance.
+
+        </dd>
+        
+        </div>
+
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <span class="text-xl">Pest and Allergen-Free</span>
+          </dt>
+          <dd class="mt-2 text-base text-gray-600">
+            Artificial lawns reduce the presence of pests like insects and bugs commonly found in natural grass. Additionally, they help minimize pollen and grass-related allergens, creating a more comfortable outdoor environment, especially for allergy sufferers.
+
+
+        </dd>
+        
+        </div>
+
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <span class="text-xl">Environmental Impact</span>
+          </dt>
+          <dd class="mt-2 text-base text-gray-600">
+            Synthetic turf reduces the use of harmful chemicals such as pesticides and fertilizers, promoting a more environmentally friendly approach to lawn care. It also eliminates the carbon emissions associated with lawn maintenance equipment, contributing to a greener planet.
+        </dd>
+        
+        </div>
+
+     
+        
+      </dl>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="mb-20 mt-10">
+  <CallToAction
+    background={heroBg}  
+    title="Experience Maintenance Free Perfection"
+    ImageAlt="Garden and patio design in Hertfordshire"
+    linkText="START YOUR PROJECT TODAY"
+    href="/contact">
+    <div slot="ctaContent"> 
+      <p class="mt-6 mb-4 lg:text-lg">
+        Say hello to a lush, hassle-free lawn that stays vibrant year-round. Whether you seek a low-maintenance garden or a pristine play area, our synthetic turf solutions offer the perfect blend of durability and aesthetics.
+    </p>
+      <p class="mb-4 lg:text-lg">
+     
+        Experience the convenience and allure of an artificial lawn tailored to your needs. Contact RAU Services today to discover how our artificial lawns can revolutionize your outdoor living. 
+      </p>
+    </div>
+  </CallToAction>
+</div>
+
+  <div class="bg-white my-10 lg:mt-20 lg:mb-20"> 
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto lg:text-center">
+        <h2 class="block lg:text-center font-semibold text-brand-primary text-2xl lg:text-4xl">Your Top Choice for Artificial Lawns in Hertfordshire</h2>
+        
+        <p class="mt-6 lg:text-lg  text-gray-600">At RAU Services, we take pride in being the premier choice for Artificial Lawns in Hertfordshire. </p>
+      </div>
+      <div class="mx-auto mt-16 lg:max-w-7xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold  text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+                  
+                  
+              </div>
+              <span class="text-xl">Expertise</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+                Our team has years of experience in designing and installing artificial lawns of all types. We have the expertise needed to ensure that your patio is both functional and visually appealing.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              <span class="text-xl">Quality materials</span>
+
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+              
+                We use only the highest quality materials in our work This ensures that your artificial lawn is durable and long-lasting.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+             <span class="text-xl">Competitive pricing</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+              We offer competitive pricing on all of our artificial lawn services, ensuring that you get the best value for your money.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              <span class="text-xl"> Customer service</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+              We pride ourselves on providing excellent customer service. We will work closely with you to ensure that your needs are met and that you are completely satisfied with our work.</dd>
+          </div>
+
+       
+          
+        </dl>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mx-auto bg-gray-800 px-6 lg:mt-10  overflow-hidden py-20">
+    <h2 class="text-white text-2xl lg:text-6xl font-bold  mb-10">Our Work</h2>
+  <p class="text-white text-lg lg:text-xl">Take a look at some of our projects and the team at work.</p>
+  <div
+  class="mt-12 grid w-full lg:gap-10 lg:grid-cols-3"
+  >
+  <div class="flex flex-col  mb-10">
+    <Image
+      src={work1}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp"
+    />
+
+  </div>
+
+  
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work2}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp"
+    />
+
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work3}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+        format="webp"
+    />
+ 
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work4}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp" 
+    />
+ 
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work5}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp" 
+    />
+
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work6}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+        format="webp"
+    />
+ 
+  </div>
+
+  
+  </div>
+
+
+  <div class="mx-auto text-center">
+    <a class="block sm:inline-flex items-center text-center uppercase no-underline bg-brand-dark-green px-5 py-3 text-sm sm:text-lg tracking-wider font-bold hover:bg-gray-500 shadow-md text-white rounded-lg" href="/contact">Get Your Project Started Today</a>
+    </div>
+
+  </div>
+
+ 
+
+</Layout>  
+

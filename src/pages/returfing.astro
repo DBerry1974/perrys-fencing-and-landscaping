@@ -1,0 +1,270 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero/Hero.astro";
+import WideHero from "../components/Hero/Hero.astro";
+import ImageBlock from "../components/ImageBlock.astro";
+import DefaulContentBlock from "../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../components/Content/ImageOnLeft.astro";
+import CallToAction from "../components/CallToAction.astro";
+import Button from "../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../components/Headings/SubTitle.astro";
+import heroBg from "../assets/images/returf3.png";
+import extension3 from "../assets/images/extension3.png";
+import fence1 from "../assets/images/fence1.png";
+import returf1 from "../assets/images/returf1.png";
+import decking1 from "../assets/images/decking1.png";
+import lawn1 from "../assets/images/lawn1.png";
+import design1 from "../assets/images/design1.png";
+import work1 from "../assets/images/work1.png";
+import work2 from "../assets/images/work2.png";
+import work3 from "../assets/images/work3.png";
+import work4 from "../assets/images/work4.png";
+import work5 from "../assets/images/work5.png";
+import work6 from "../assets/images/work6.png";
+import work7 from "../assets/images/work7.png";
+import returf2 from "../assets/images/returf2.png";
+
+import garden1 from "../assets/images/garden1.png";
+
+
+---
+
+<Layout title={`RAU Services | Re-turfing Services Hertfordshire`} description={`Providing premium Home, Garden and Landscaping Services. Re-turfing in Hertfordshire.`}>
+
+
+
+
+<Hero
+title="Re-turfing Hertfordshire"
+sub="Rejuvenate Your Lawn"
+linkText="Get a Quote Today"
+href="/contact"
+image={heroBg}
+
+>
+<div slot="heroContent"> 
+  <p class="my-6 lg:text-lg">
+    Explore RAU Services' expert re-turfing solutions crafted to revitalise your lawn. Our commitment to precision and client satisfaction ensures that each re-turfing project we undertake transforms your outdoor space, providing a lush and rejuvenated landscape tailored to your desires.
+  </p>  
+  
+</div>  
+</Hero>
+		
+<div class="lg:mt-20">
+ 
+	<ImageOnRight
+    
+    title="Expert Re-turfing Services in Hertfordshire"
+    image={returf2} 
+    imageAlt="Quality, Durability, and Peace of Mind"
+    height={580} 
+    width={600}
+    href="/contact"
+    linkText="GET A FREE QUOTE TODAY"
+  >
+    <Fragment slot="content" >
+      
+      <p class="mb-4">
+        At RAU Services, our dedicated team excels in re-turfing, managing each phase with expertise. From evaluating your lawn's state to skillfully laying down top-grade turf, we prioritize delivering a renewed lawn that not only enhances your property's aesthetics but also improves its practicality. Rely on us to transform your lawn into an inviting and thriving outdoor space you'll delight in.
+      </p>
+ 
+      <p class="mb-4">
+        Taking pride in our meticulous approach, we ensure that your re-turfing experience goes beyond just revitalization. Our commitment extends to providing tailored advice on lawn care post-re-turfing, guiding you to maintain the newly laid turf's health and vibrancy. With RAU Services, not only do you receive exceptional re-turfing but also ongoing support to help your lawn flourish for years to come.
+      </p>
+ 
+    </Fragment>
+  </ImageOnRight>
+
+</div>
+
+<div class="mt-20">
+ 
+  <CallToAction
+    background={heroBg}  
+    title="Transform Your Lawn Today"
+    ImageAlt="Re-turfing in Hertfordshire"
+    linkText="START YOUR PROJECT TODAY"
+    href="/contact">
+    <div slot="ctaContent"> 
+      <p class="mt-6 mb-4 lg:text-lg">
+        Are you ready to witness the transformation of your lawn into a lush and vibrant landscape? RAU Services are here to bring your vision to life with our expert re-turfing solutions.
+      </p>
+      <p class="mb-4 lg:text-lg">
+        Our dedicated team is eager to discuss your re-turfing needs, offering tailored advice and a commitment to delivering a lawn that not only enhances your property but also becomes a source of pride. Trust RAU Services to turn your lawn into a refreshed and thriving green space – contact us today!    </p>
+    </div>
+  </CallToAction>
+</div>
+
+  <div class="bg-white my-10 lg:mt-20 lg:mb-20"> 
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto lg:text-center">
+        <h2 class="block lg:text-center font-semibold text-brand-primary text-2xl lg:text-4xl">Your Premier Choice for Re-Turfing Excellence in Hertfordshire
+        </h2>
+        
+        <p class="mt-6 lg:text-lg  text-gray-600">At RAU Services, we stand as your top choice for re-turfing solutions uniquely crafted for Hertfordshire. Our unwavering commitment to precision and client satisfaction guarantees that every re-turfing project we undertake transforms your outdoor space into a beautiful and comfortable outdoor space.
+
+        </p>
+      </div>
+      <div class="mx-auto mt-16 lg:max-w-7xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold  text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+                  
+                  
+              </div>
+              <span class="text-xl">Expertise</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+              Our team boasts extensive experience in re-turfing projects of various scales and complexities. Equipped with the necessary expertise, we ensure that your re-turfing process is comprehensive, leaving behind a lush and rejuvenated lawn tailored to your preferences.
+
+            </dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              <span class="text-xl">  Quality Execution</span>
+
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+              Using only top-quality tools and methods, we ensure that the re-turfing process is conducted with utmost efficiency and effectiveness. With meticulous attention to detail, we lay down fresh, premium-quality turf, providing your lawn with a vibrant and immaculate new look.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+             <span class="text-xl">Competitive pricing</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+              Our commitment to offering exceptional value extends to competitive pricing on all our re-turfing services. We strive to ensure that you receive the highest quality work without compromising your budget.
+
+
+            </dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              <span class="text-xl"> Customer Satisfaction</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+              Prioritizing excellent customer service, we collaborate closely with you to meet your re-turfing needs, ensuring your complete satisfaction with our workmanship. Trust RAU Services to deliver a comprehensive and gratifying re-turfing experience tailored to enhance the beauty of your outdoor space.</dd>
+          </div>
+
+       
+          
+        </dl>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mx-auto bg-gray-800 px-6 lg:mt-10  overflow-hidden py-20">
+    <h2 class="text-white text-2xl lg:text-6xl font-bold  mb-10">Our Work</h2>
+  <p class="text-white text-lg lg:text-xl">Take a look at some of our projects and the team at work.</p>
+  <div
+  class="mt-12 grid w-full lg:gap-10 lg:grid-cols-3"
+  >
+  <div class="flex flex-col  mb-10">
+    <Image
+      src={work1}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp"
+    />
+
+  </div>
+
+  
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work2}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp"
+    />
+
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work3}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+        format="webp"
+    />
+ 
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work4}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp" 
+    />
+ 
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work5}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp" 
+    />
+
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work6}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+        format="webp"
+    />
+ 
+  </div>
+
+  
+  </div>
+
+
+  <div class="mx-auto text-center">
+    <a class="block sm:inline-flex items-center text-center uppercase no-underline bg-brand-dark-green px-5 py-3 text-sm sm:text-lg tracking-wider font-bold hover:bg-gray-500 shadow-md text-white rounded-lg" href="/contact">Get Your Project Started Today</a>
+    </div>
+
+  </div>
+
+ 
+
+</Layout>  
+

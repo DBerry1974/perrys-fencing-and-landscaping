@@ -1,0 +1,390 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero/Hero.astro";
+import WideHero from "../components/Hero/Hero.astro";
+import ImageBlock from "../components/ImageBlock.astro";
+import DefaulContentBlock from "../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../components/Content/ImageOnLeft.astro";
+import CallToAction from "../components/CallToAction.astro";
+import Button from "../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../components/Headings/SubTitle.astro";
+import heroBg from "../assets/images/extension7.png";
+import extension3 from "../assets/images/extension3.png";
+import extension5 from "../assets/images/extension5.png";
+import extension9 from "../assets/images/extension9.png";
+import extension10 from "../assets/images/extension10.png";
+import extension6 from "../assets/images/extension6.png";
+import extension7 from "../assets/images/extension7.png";
+import extension8 from "../assets/images/extension8.png";
+import extension11 from "../assets/images/extension11.png";
+import extension12 from "../assets/images/extension12.png";
+
+import fence1 from "../assets/images/fence1.png";
+import fence2 from "../assets/images/fence2.jpg";
+
+import returf1 from "../assets/images/returf1.png";
+import decking1 from "../assets/images/decking1.png";
+import lawn1 from "../assets/images/lawn1.png";
+import design1 from "../assets/images/design1.png";
+import work1 from "../assets/images/work1.png";
+import work2 from "../assets/images/work2.png";
+import work3 from "../assets/images/work3.png";
+import work4 from "../assets/images/work4.png";
+import work5 from "../assets/images/work5.png";
+import work6 from "../assets/images/work6.png";
+import work7 from "../assets/images/work7.png";
+import patio2 from "../assets/images/patio2.jpg";
+import patio3 from "../assets/images/patio3.jpg";
+
+
+
+---
+
+<Layout title={`RAU Services | Home Extensions in Hertfordshire`} description={`Providing premium Home, Garden and Landscaping Services. Home Extensions in Hertfordshire.`}>
+
+
+
+
+<Hero
+title="Home Extensions Hertfordshire"
+sub="Expanding Your Living Space"
+linkText="Get a Quote Today"
+href="/contact"
+image={heroBg}
+
+>
+<div slot="heroContent"> 
+  <p class="mt-6 mb-4 lg:text-lg">
+    With our home extensions, your living space grows seamlessly, offering adaptable areas that suit your changing needs. Whether it's creating room for your hobbies, accommodating a growing family, or simply enhancing your home's footprint, our goal is to provide flexible and functional extensions that seamlessly integrate with your existing property. 
+</p>
+  <p class="mb-10 lg:text-lg">
+    Experience the freedom to expand your home without constraints, as we prioritize designing extensions that add space and versatility while ensuring a smooth and efficient construction process.
+  </p>  
+  
+</div>  
+</Hero>
+		
+<div class="lg:mt-20">
+ 
+	<ImageOnRight
+    
+    title="Custom Home Extensions in Hertfordshire"
+    image={extension9} 
+    imageAlt="Custom Home Extensions in Hertfordshire"
+    height={600} 
+    width={600}
+   
+  >
+    <Fragment slot="content" >
+      <p class="my-4">
+        At RAU Services, we specialise in tailoring home extensions to suit your needs, adding both space and value to your property.
+      </p>
+      <p class="mb-4">
+        Our approach begins by understanding your vision for the ideal living space. Whether it's creating room for entertainment, accommodating a growing family, or carving out space for a home office, our team is dedicated to crafting extensions that seamlessly integrate with your existing home while providing the functionality you desire. We prioritise a collaborative process, working closely with you to design and construct extensions that amplify your living experience, offering versatility and adaptability to meet your evolving lifestyle needs.
+
+
+      </p>
+      <p class="mb-4">
+        With RAU Services, embrace the opportunity to expand your home in a way that reflects your aspirations. Experience the ease and satisfaction of a meticulously planned and expertly executed home extension project designed to elevate your living space.
+    </p>
+ 
+ 
+    </Fragment>
+  </ImageOnRight>
+
+  <ImageOnLeft
+    
+    title="Architect-Approved Extensions: Elevating Your Home"
+    image={extension5} 
+    imageAlt="Architect-Approved Extensions"
+    height={650} 
+    width={600}
+  >
+    <Fragment slot="content" >
+      <p class="my-4">
+        An architect-approved extension is a mark of quality and assurance. It signifies that your home extension project has undergone thorough planning, adheres to building regulations, and meets the highest standards of design and construction.
+    </p>
+      <p class="mb-4">
+        At RAU Services, our architect-approved extensions are a testament to our commitment to excellence. We collaborate closely with experienced architects to ensure that every aspect of your extension aligns with your vision while complying with legal requirements. From structural integrity to aesthetic appeal, these extensions are meticulously planned, designed, and executed, offering a seamless integration with your existing home.
+      </p>
+      <p class="mb-4">
+        Choosing an architect-approved extension means investing in a space that not only enhances your living environment but also adds long-term value to your property. It's about bringing your dream space to life while ensuring the highest level of craftsmanship and compliance with industry standards. With RAU Services, rest assured that your architect-approved extension is a testament to quality, expertise, and meticulous attention to detail.
+    </p>
+ 
+ 
+    </Fragment>
+  </ImageOnLeft>
+
+</div>
+
+<div class="bg-white my-10 lg:mt-20 lg:mb-20"> 
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto lg:text-center">
+      <h2 class="block lg:text-center font-semibold text-brand-primary text-2xl lg:text-4xl">Advantages of Architect-Approved Extensions
+      </h2>
+    
+    </div>
+    <div class="mx-auto mt-16 lg:max-w-7xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold  text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                </svg>
+                
+                
+            </div>
+            <span class="text-xl">Design Expertise</span>
+          </dt>
+          <dd class="mt-2 text-base text-gray-600">
+            Opting for an architect-approved extension guarantees access to professional design expertise. Architects bring a wealth of knowledge to the table, ensuring that your extension not only complements your existing home but also aligns with your vision. Their expertise in space planning, aesthetics, and functionality results in a well-thought-out design that maximizes your living space's potential.        
+        </dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <span class="text-xl">Structural Integrity</span>
+
+          </dt>
+          <dd class="mt-2 text-base text-gray-600">
+            Architect-approved extensions prioritize structural soundness. Architects work closely with engineers to ensure that the extension is structurally robust, complying with building codes and regulations. This meticulous attention to structural integrity ensures that your extended space is safe, durable, and built to last.
+
+
+            </dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+           <span class="text-xl"> Added Value</span>
+          </dt>
+          <dd class="mt-2 text-base text-gray-600">
+           An architect-approved extension enhances the value of your property. With a design that integrates seamlessly with your home's architecture, the extension not only increases the available living space but also improves the overall aesthetics. This added appeal can significantly boost your property's market value should you consider selling in the future.
+
+
+</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base font-semibold text-gray-900">
+            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <span class="text-xl">Streamlined Process</span>
+          </dt>
+          <dd class="mt-2 text-base text-gray-600">
+            Working with an architect streamlines the extension process. Architects oversee the project from conception to completion, managing various aspects such as design, obtaining necessary permits, liaising with contractors, and ensuring adherence to timelines. Their involvement ensures a smoother and more efficient construction journey, minimizing potential issues and delays.
+        </dd>
+        
+        </div>
+
+     
+      </dl>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="mb-20 mt-10">
+  <CallToAction
+    background={heroBg}  
+    title="Get Your Extension Project Started Today"
+    ImageAlt="Get Your Home Extension Project Started Today"
+    linkText="START YOUR PROJECT TODAY"
+    href="/contact">
+    <div slot="ctaContent"> 
+      <p class="mt-6 mb-4 lg:text-lg">
+        Contact us now to begin your journey towards a tailor-made extension that suits your needs. Our team will guide you through the process, from initial consultations to the final construction phase, ensuring that your extension project aligns with your desires and budget. 
+    </p>
+      <p class="mb-4 lg:text-lg">
+        With RAU Services, experience the ease and satisfaction of expanding your home with precision and expertise.
+    </p>
+    </div>
+  </CallToAction>
+</div>
+
+  <div class="bg-white my-10 lg:mt-20 lg:mb-20"> 
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto lg:text-center">
+        <h2 class="block lg:text-center font-semibold text-brand-primary text-2xl lg:text-4xl">Your Top Choice for home Extensions in Hertfordshire</h2>
+        
+        <p class="mt-6 lg:text-lg  text-gray-600">At RAU Services, we're proud to stand as the leading choice for home extensions in Hertfordshire.
+
+        </p>
+      </div>
+      <div class="mx-auto mt-16 lg:max-w-7xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold  text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+                  
+                  
+              </div>
+              <span class="text-xl">Expertise</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+                Our team boasts extensive experience in designing and constructing various types of home extensions. We possess the expertise necessary to ensure that your extended living space not only serves its purpose but also enhances the aesthetic appeal of your home.
+            </dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              <span class="text-xl">Quality Craftsmanship
+            </span>
+
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+                We adhere to using only top-quality materials in all our extension projects. This dedication ensures that your home extension is not just an addition but a durable and lasting enhancement to your property.
+
+            </dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+             <span class="text-xl">Competitive Rates
+            </span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+                We offer competitive pricing for all our home extension services, guaranteeing that you receive exceptional value for your investment.
+
+                .</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              <span class="text-xl">Customer Focus</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+                
+                At RAU Services, exceptional customer service is our hallmark. We prioritize a collaborative approach, working closely with you to meet your needs and ensure your complete satisfaction with the results of your home extension project.</dd>
+          </div>
+
+       
+          
+        </dl>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mx-auto bg-gray-800 px-6 lg:mt-10  overflow-hidden py-20">
+    <h2 class="text-white text-2xl lg:text-6xl font-bold  mb-10">Our Work</h2>
+  <p class="text-white text-lg lg:text-xl">Take a look at some of our projects and the team at work.</p>
+  <div
+  class="mt-12 grid w-full lg:gap-10 lg:grid-cols-3"
+  >
+  <div class="flex flex-col  mb-10">
+    <Image
+      src={extension9}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp"
+    />
+
+  </div>
+
+  
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={extension5}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp"
+    />
+
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={extension11}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+        format="webp"
+    />
+ 
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={extension10}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp" 
+    />
+ 
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={extension12}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp" 
+    />
+
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={extension8}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+        format="webp"
+    />
+ 
+  </div>
+
+  
+  </div>
+
+
+  <div class="mx-auto text-center">
+    <a class="block sm:inline-flex items-center text-center uppercase no-underline bg-brand-dark-green px-5 py-3 text-sm sm:text-lg tracking-wider font-bold hover:bg-gray-500 shadow-md text-white rounded-lg" href="/contact">Get Your Project Started Today</a>
+    </div>
+
+  </div>
+
+ 
+
+</Layout>  
+

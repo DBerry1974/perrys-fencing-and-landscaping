@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets'
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero/Hero.astro";
+import DefaulContentBlock from "../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../components/Content/ImageOnLeft.astro";
+import CallToAction from "../components/CallToAction.astro";
+import Button from "../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../components/Headings/SubTitle.astro";
+import BigQuote from "../components/BigQuote.astro";
+
+import heroBg from "../assets/images/extension7.png";   
+---
+
+<Layout title={`Contact Us | RAU Services`} description={`Providing premium Home, Garden and Landscaping Services. Home extensions, fencing, patios, lawns and more in Hertfordshire. Get a FREE quote today.`}>
+
+
+
+
+<Hero 
+title="RAU Services"
+sub="Get in Touch for a FREE Quote Today" 
+
+image={heroBg}
+
+>
+
+</Hero>
+		
+
+
+<div class="bg-white lg:my-32 my-20">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto lg:text-center">
+        <h2 class="block lg:text-center font-semibold text-brand-primary text-2xl lg:text-4xl">Get Your Project Started</h2>
+        
+        <p class="mt-6 lg:text-lg  text-gray-600">Get in touch today for a FREE HOME SURVEY AND QUOTE.
+
+<br />
+Complete our short online survey form by following the link below, and one of the experts from RAU Services to get your free, no obligation quote.
+
+        </p>
+
+     
+        <Button href="https://2wg4hkpfq09.typeform.com/to/KuG0wTg8">COMPLETE ONLINE SURVEY</Button>
+
+
+      </div>
+      
+      
+       
+        
+  
+    </div>
+  </div>
+
+
+  
+
+
+
+</Layout>  
+
