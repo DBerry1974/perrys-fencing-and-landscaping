@@ -17,7 +17,7 @@ interface Props {
 const { title, sub, extraSub, copy, subCopy, image, href, linkText } = Astro.props;
 ---
 
-<div class="relative min-h-fit sm:min-h-0 overflow-hidden  shadow-xl">
+<div class="relative min-h-fit sm:min-h-0 overflow-hidden">
   <div class="absolute inset-0">
     <Image
       class="h-full w-full object-cover"
@@ -78,6 +78,7 @@ const { title, sub, extraSub, copy, subCopy, image, href, linkText } = Astro.pro
    
     <slot name="heroContent" />
   </div>
+  <div class="w-3/4 mx-auto lg:w-full">
 
         {
           href && (
@@ -86,6 +87,7 @@ const { title, sub, extraSub, copy, subCopy, image, href, linkText } = Astro.pro
             </a>
           )
         }
+        </div>
       </div>
     </div>
   </div>
