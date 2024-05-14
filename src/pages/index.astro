@@ -8,6 +8,7 @@ import WideHero from "../components/Hero/Hero.astro";
 import ImageBlock from "../components/ImageBlock.astro";
 import DefaulContentBlock from "../components/Content/DefaultContentBlock.astro";
 import Areas from "../components/areas.astro";
+import GetaQuote from "../components/GetaQuote.astro";
 
 import ImageOnRight from "../components/Content/ImageOnRight.astro";
 import ImageOnLeft from "../components/Content/ImageOnLeft.astro";
@@ -326,7 +327,7 @@ image={heroBg}
       alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
-        format="webp"
+        format="webp" 
     />
  
   </div>
@@ -347,6 +348,17 @@ image={heroBg}
 
 </div>
 
+<GetaQuote 
+background={fence2}
+href="/"
+linkText="Talk to an Expert"
+>
 
+<div slot="quoteContent"> 
+  <p>
+    Perry's Fencing & Landscaping offer a FREE home survey and no-obligation quote service. Our espert team will come to your property, assess your specific needs, and discuss your project goals. You'll receive expert advice tailored to your requirements and a detailed quote with transparent pricing, allowing you to make informed decisions about your project.
+  </p>
+
+</GetaQuote>
 </Layout>  
 

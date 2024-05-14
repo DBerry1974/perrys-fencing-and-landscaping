@@ -11,7 +11,10 @@ import ImageOnLeft from "../components/Content/ImageOnLeft.astro";
 import CallToAction from "../components/CallToAction.astro";
 import Button from "../components/Buttons/PrimaryButton.astro";
 import SubTitle from "../components/Headings/SubTitle.astro";
-import heroBg from "../assets/images/patio4.png";
+import GetaQuote from "../components/GetaQuote.astro";
+import Areas from "../components/areas.astro";
+
+import heroBg from "../assets/images/patiobg1.png";
 import extension3 from "../assets/images/extension3.png";
 import fence1 from "../assets/images/fence1.png";
 import fence2 from "../assets/images/fence2.jpg";
@@ -20,13 +23,16 @@ import returf1 from "../assets/images/returf1.png";
 import decking1 from "../assets/images/decking1.png";
 import lawn1 from "../assets/images/lawn1.png";
 import design1 from "../assets/images/design1.png";
-import work1 from "../assets/images/work1.png";
+import work1 from "../assets/images/workimg1.png";
 import work2 from "../assets/images/work2.png";
 import work3 from "../assets/images/work3.png";
-import work4 from "../assets/images/work4.png";
-import work5 from "../assets/images/work5.png";
-import work6 from "../assets/images/work6.png";
-import work7 from "../assets/images/work7.png";
+import work4 from "../assets/images/workimg2.png";
+import work5 from "../assets/images/workimg3.png";
+import work6 from "../assets/images/workimg4.png";
+import work7 from "../assets/images/workimg7.png";
+import work8 from "../assets/images/workimg8.png";
+import work9 from "../assets/images/workimg9.png";
+
 import patio2 from "../assets/images/patio2.jpg";
 import patio3 from "../assets/images/patio3.jpg";
 
@@ -34,13 +40,13 @@ import patio3 from "../assets/images/patio3.jpg";
 
 ---
 
-<Layout title={`RAU Services | Patio and Garden Design Services Hertfordshire`} description={`Providing premium Home, Garden and Landscaping Services. Patio and Garden Design in Hertfordshire.`}>
+<Layout title={`Perry's Fencing and Landscaping Services | Patio and Garden Design Services in Hertfordshire, Bedfordshire, Essex & North London.`} description={`Providing premium Fencing and Landscaping Services. Patio and Garden Design in Herts, Bucks, Essex & North London.`}>
 
 
 
 
 <Hero
-title="Patio & Garden Design Hertfordshire"
+title="Patio & Garden Design Hertfordshire, Bedfordshire, Essex & North London"
 sub="Step Outdoors in Style"
 linkText="Get a Quote Today"
 href="/contact"
@@ -49,7 +55,7 @@ image={heroBg}
 >
 <div slot="heroContent"> 
   <p class="mt-6 mb-4 lg:text-lg">
-    At RAU Services, we specialize in crafting personalized and inviting outdoor spaces through our expert patio and garden design services. Our team approaches each project with a dedication to understanding your vision and creating a harmonious blend of functionality and aesthetics. 
+    At Perry's Fencing & Landscaping, we specialize in crafting personalized and inviting outdoor spaces through our expert patio and garden design services. Our team approaches each project with a dedication to understanding your vision and creating a harmonious blend of functionality and aesthetics. 
   </p>
   <p class="mb-10 lg:text-lg">
     Whether it's transforming a compact patio or designing an expansive garden, we meticulously tailor our designs to reflect your unique style, ensuring that every corner of your outdoor space becomes a tranquil retreat perfectly suited to your lifestyle.
@@ -57,28 +63,27 @@ image={heroBg}
   
 </div>  
 </Hero>
-		
+<Areas />	
 <div class="lg:mt-20">
  
 	<ImageOnRight
     
-    title="Custom Patio & Garden Design in Hertfordshire"
-    image={work3} 
-    imageAlt="Custom Patio & Garden Design in Hertfordshire"
+    title="Custom Patio & Garden Design in Hertfordshire, Bedfordshire, Essex & North London"
+    image={work8} 
+    imageAlt="Custom Patio & Garden Design in Hertfordshire, Bedfordshire, Essex & North London"
     height={650} 
     width={600}
-    href="/contact"
-    linkText="GET A FREE QUOTE TODAY"
+    
   >
     <Fragment slot="content" >
       <p class="my-4">
-        At RAU Services, we believe in designing outdoor spaces that match your lifestyle. Our patio and garden design process begins with listening to your preferences and understanding how you envision using your outdoor area. Working hand in hand, we aim to create practical yet beautiful designs that fit seamlessly with your home and surroundings.
+        At Perry's Fencing & Landscaping, we believe in designing outdoor spaces that match your lifestyle. Our patio and garden design process begins with listening to your preferences and understanding how you envision using your outdoor area. Working hand in hand, we aim to create practical yet beautiful designs that fit seamlessly with your home and surroundings.
      </p>
       <p class="mb-4">
         Our team of skilled designers and landscapers focuses on translating your ideas into reality, carefully planning every detail from layout to materials. We ensure that your patio or garden isn’t just visually appealing but also functional, becoming an extension of your home that you'll love spending time in.
       </p>
       <p class="mb-4">
-        With RAU Services, you can expect tailored designs that reflect your personality and cater to your needs, ensuring your outdoor space is a place of relaxation and enjoyment for years to come.
+        With Perry's Fencing & Landscaping, you can expect tailored designs that reflect your personality and cater to your needs, ensuring your outdoor space is a place of relaxation and enjoyment for years to come.
     </p>
  
  
@@ -88,17 +93,17 @@ image={heroBg}
 </div>
 
   <div class="mx-auto max-w-7xl px-6  overflow-hidden mt-20">
-    <h2 class="text-brand-primary text-center text-2xl lg:text-4xl font-bold mb-10">Tailored Outdoor Spaces in Hertfordshire</h2>
+    <h2 class="text-brand-primary text-center text-2xl lg:text-4xl font-bold mb-10">Tailored Outdoor Spaces in Hertfordshire, <br />Bedfordshire, Essex & North London</h2>
     <p class="text-lg mb-4 text-gray-700">
-        RAU Services focuses on crafting outdoor areas just for you. From gardens to patios, our designs are all about blending in seamlessly with your surroundings. We pay attention to the details, making sure your outdoor space feels like an extension of your home—tailored to your needs and tastes.
+      Perry's Fencing & Landscaping focus on crafting outdoor areas just for you. From gardens to patios, our designs are all about blending in seamlessly with your surroundings. We pay attention to the details, making sure your outdoor space feels like an extension of your home—tailored to your needs and tastes.
     </p>
 </div>
 
 <ImageOnLeft
     
-title="Patio Design in Hertfordshire"
-image={patio3} 
-imageAlt="Custom Patio & Garden Design in Hertfordshire"
+title="Patio Design in Hertfordshire, Bedfordshire, Essex & North London"
+image={work7} 
+imageAlt="Custom Patio & Garden Design in Hertfordshire, Bedfordshire, Essex & North London"
 height={500} 
 width={600}
 >
@@ -107,7 +112,7 @@ width={600}
     We specialise in crafting personalised and functional patio spaces that cater to your outdoor living needs. Our patio design process begins with understanding your lifestyle and how you envision utilizing your outdoor area. From cozy corners for quiet evenings to expansive entertainment spaces, we strive to create patios that seamlessly integrate with your home and surroundings.
 </p>
   <p class="mb-4">
-    Our team of skilled designers and craftsmen focuses on translating your patio vision into a practical and inviting space. We carefully consider layout, materials, and features to ensure your patio isn’t just an extension of your home but a welcoming retreat. With RAU Services, expect personalised designs that reflect your style and transform your outdoor space into a versatile area perfect for relaxation and gatherings.
+    Our team of skilled designers and craftsmen focuses on translating your patio vision into a practical and inviting space. We carefully consider layout, materials, and features to ensure your patio isn’t just an extension of your home but a welcoming retreat. With Perry's Fencing & Landscaping, expect personalised designs that reflect your style and transform your outdoor space into a versatile area perfect for relaxation and gatherings.
 
 </p>
 
@@ -119,15 +124,15 @@ width={600}
 
 <ImageOnRight
     
-title="Garden Design in Hertfordshire"
-image={patio2} 
-imageAlt="Custom Patio & Garden Design in Hertfordshire"
+title="Garden Design in Hertfordshire, Bedfordshire, Essex & North London"
+image={work1} 
+imageAlt="Custom Patio & Garden Design in Hertfordshire, Bedfordshire, Essex & North London"
 height={500} 
 width={600}
 >
 <Fragment slot="content" >
   <p class="my-4">
-At RAU Services, we specialise in crafting gardens that suit your outdoor preferences. We start by understanding how you want to use your outdoor area. Whether it's for relaxation or entertainment, our team collaborates closely with you to design a garden that fits your lifestyle. We focus on layout and design, ensuring your garden blends seamlessly with your home.
+At Perry's Fencing & Landscaping, we specialise in crafting gardens that suit your outdoor preferences. We start by understanding how you want to use your outdoor area. Whether it's for relaxation or entertainment, our team collaborates closely with you to design a garden that fits your lifestyle. We focus on layout and design, ensuring your garden blends seamlessly with your home.
 
 </p>
   <p class="mb-4">
@@ -139,30 +144,102 @@ With us, your garden becomes a personalised outdoor space tailored to your needs
 </Fragment>
 </ImageOnRight>
 
-<div class="mb-20 mt-10">
-  <CallToAction
-    background={heroBg}  
-    title="Transform Your Outdoors"
-    ImageAlt="Garden and patio design in Hertfordshire"
-    linkText="START YOUR PROJECT TODAY"
-    href="/contact">
-    <div slot="ctaContent"> 
-      <p class="mt-6 mb-4 lg:text-lg">
-      Contact us today to begin crafting your personalised outdoor sanctuary. Let RAU Services be your partner in creating an outdoor space that complements your lifestyle and enhances the beauty of your home. 
-    </p>
-      <p class="mb-4 lg:text-lg">
-        From initial concept to final creation, we're committed to tailoring your outdoor area to perfection. Together, let's transform your outdoors into an inviting haven you'll cherish for years to come.
-      </p>
-    </div>
-  </CallToAction>
+<div class="mx-auto bg-gray-800 px-6 lg:mt-10  overflow-hidden py-20">
+  <h2 class="text-white text-2xl lg:text-6xl font-bold  mb-10">Our Work</h2>
+<p class="text-white text-lg lg:text-xl">Take a look at some of our projects and the team at work.</p>
+<div
+class="mt-12 grid w-full lg:gap-10 lg:grid-cols-3"
+>
+<div class="flex flex-col  mb-10">
+  <Image
+    src={work7}
+    class="w-full h-full overflow-hidden rounded-lg"
+    alt="Rubber roofs - durable EPDM roofing"
+    width={600}
+    height={600}
+    format="webp"
+  />
+
+</div>
+
+
+
+<div class="flex flex-col  mb-10">
+    <Image
+    src={work8}
+    class="w-full h-full overflow-hidden rounded-lg"
+    alt="Rubber roofs - durable EPDM roofing"
+    width={600}
+    height={600}
+    format="webp"
+  />
+
+</div>
+
+<div class="flex flex-col  mb-10">
+    <Image
+    src={work9}
+    class="w-full h-full overflow-hidden rounded-lg"
+    alt="Rubber roofs - durable EPDM roofing"
+    width={600}
+    height={600}
+      format="webp"
+  />
+
+</div>
+
+<div class="flex flex-col  mb-10">
+    <Image
+    src={work4}
+    class="w-full h-full overflow-hidden rounded-lg"
+    alt="Rubber roofs - durable EPDM roofing"
+    width={600}
+    height={600}
+    format="webp" 
+  />
+
+</div>
+
+<div class="flex flex-col  mb-10">
+    <Image
+    src={work5}
+    class="w-full h-full overflow-hidden rounded-lg"
+    alt="Rubber roofs - durable EPDM roofing"
+    width={600}
+    height={600}
+    format="webp" 
+  />
+
+</div>
+
+<div class="flex flex-col  mb-10">
+    <Image
+    src={work6}
+    class="w-full h-full overflow-hidden rounded-lg"
+    alt="Rubber roofs - durable EPDM roofing"
+    width={600}
+    height={600}
+      format="webp"
+  />
+
+</div>
+
+
+</div>
+
+
+<div class="mx-auto text-center">
+  <a class="block sm:inline-flex items-center text-center uppercase no-underline bg-gradient-to-b from-brand-primary to-brand-secondary px-5 py-3 text-sm sm:text-lg tracking-wider font-bold hover:bg-gradient-to-t hover:from-brand-primary hover:to-brand-secondary shadow-md text-white rounded-lg" href="/contact">Get Your Project Started Today</a>
+  </div>
+
 </div>
 
   <div class="bg-white my-10 lg:mt-20 lg:mb-20"> 
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto lg:text-center">
-        <h2 class="block lg:text-center font-semibold text-brand-primary text-2xl lg:text-4xl">Your Top Choice for Garden & Patio Design in Hertfordshire</h2>
+        <h2 class="block lg:text-center font-bold text-brand-primary text-2xl lg:text-4xl">Your Top Choice for Garden & Patio Design in Hertfordshire, Bedfordshire, Essex & North London</h2>
         
-        <p class="mt-6 lg:text-lg  text-gray-600">At RAU Services, we take pride in being the premier choice for garden and patio design in Hertfordshire. </p>
+        <p class="mt-6 lg:text-lg  text-gray-600">At Perry's Fencing & Landscaping, we take pride in being the premier choice for garden and patio design in Hertfordshire, Bedfordshire, Essex & North London. </p>
       </div>
       <div class="mx-auto mt-16 lg:max-w-7xl">
         <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -226,96 +303,19 @@ With us, your garden becomes a personalised outdoor space tailored to your needs
     </div>
   </div>
   
-  <div class="mx-auto bg-gray-800 px-6 lg:mt-10  overflow-hidden py-20">
-    <h2 class="text-white text-2xl lg:text-6xl font-bold  mb-10">Our Work</h2>
-  <p class="text-white text-lg lg:text-xl">Take a look at some of our projects and the team at work.</p>
-  <div
-  class="mt-12 grid w-full lg:gap-10 lg:grid-cols-3"
+ 
+  <GetaQuote 
+  background={fence2}
+  href="/"
+  linkText="Talk to an Expert"
   >
-  <div class="flex flex-col  mb-10">
-    <Image
-      src={work1}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Rubber roofs - durable EPDM roofing"
-      width={600}
-      height={600}
-      format="webp"
-    />
-
-  </div>
-
   
+  <div slot="quoteContent"> 
+    <p>
+      Perry's Fencing & Landscaping offer a FREE home survey and no-obligation quote service. Our espert team will come to your property, assess your specific needs, and discuss your project goals. You'll receive expert advice tailored to your requirements and a detailed quote with transparent pricing, allowing you to make informed decisions about your project.
+    </p>
   
-  <div class="flex flex-col  mb-10">
-      <Image
-      src={work2}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Rubber roofs - durable EPDM roofing"
-      width={600}
-      height={600}
-      format="webp"
-    />
-
-  </div>
-  
-  <div class="flex flex-col  mb-10">
-      <Image
-      src={work3}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Rubber roofs - durable EPDM roofing"
-      width={600}
-      height={600}
-        format="webp"
-    />
- 
-  </div>
-  
-  <div class="flex flex-col  mb-10">
-      <Image
-      src={work4}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Rubber roofs - durable EPDM roofing"
-      width={600}
-      height={600}
-      format="webp" 
-    />
- 
-  </div>
-  
-  <div class="flex flex-col  mb-10">
-      <Image
-      src={work5}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Rubber roofs - durable EPDM roofing"
-      width={600}
-      height={600}
-      format="webp" 
-    />
-
-  </div>
-  
-  <div class="flex flex-col  mb-10">
-      <Image
-      src={work6}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Rubber roofs - durable EPDM roofing"
-      width={600}
-      height={600}
-        format="webp"
-    />
- 
-  </div>
-
-  
-  </div>
-
-
-  <div class="mx-auto text-center">
-    <a class="block sm:inline-flex items-center text-center uppercase no-underline bg-brand-dark-green px-5 py-3 text-sm sm:text-lg tracking-wider font-bold hover:bg-gray-500 shadow-md text-white rounded-lg" href="/contact">Get Your Project Started Today</a>
-    </div>
-
-  </div>
-
+  </GetaQuote>
  
 
 </Layout>  

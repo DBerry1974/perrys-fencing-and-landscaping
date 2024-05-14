@@ -2,6 +2,8 @@
 export const prerender = true;
 import { Image } from 'astro:assets'
 import Layout from "../layouts/Layout.astro";
+import GetaQuote from "../components/GetaQuote.astro";
+import Areas from "../components/areas.astro";
 import Hero from "../components/Hero/Hero.astro";
 import WideHero from "../components/Hero/Hero.astro";
 import ImageBlock from "../components/ImageBlock.astro";
@@ -15,18 +17,21 @@ import heroBg from "../assets/images/artificial1.png";
 import extension3 from "../assets/images/extension3.png";
 import fence1 from "../assets/images/fence1.png";
 import fence2 from "../assets/images/fence2.jpg";
+import img1 from "../assets/images/perry-fence5.png";
 
 import returf1 from "../assets/images/returf1.png";
 import decking1 from "../assets/images/decking1.png";
-import lawn1 from "../assets/images/lawn1.png";
+import lawn1 from "../assets/images/lawn1.png"; 
 import design1 from "../assets/images/design1.png";
-import work1 from "../assets/images/work1.png";
-import work2 from "../assets/images/work2.png";
-import work3 from "../assets/images/work3.png";
-import work4 from "../assets/images/work4.png";
-import work5 from "../assets/images/work5.png";
-import work6 from "../assets/images/work6.png";
-import work7 from "../assets/images/work7.png";
+import work1 from "../assets/images/workimg1.png";
+import work2 from "../assets/images/workimg2.png";
+import work3 from "../assets/images/workimg3.png";
+import work4 from "../assets/images/workimg4.png";
+import work5 from "../assets/images/workimg5.png";
+import work6 from "../assets/images/workimg6.png";
+import work7 from "../assets/images/workimg7.png";
+import work8 from "../assets/images/workimg8.png";
+import work9 from "../assets/images/workimg9.png";
 import patio2 from "../assets/images/patio2.jpg";
 import patio3 from "../assets/images/patio3.jpg";
 
@@ -34,13 +39,13 @@ import patio3 from "../assets/images/patio3.jpg";
 
 ---
 
-<Layout title={`RAU Services | Arificial Lawns Hertfordshire`} description={`Providing premium Home, Garden and Landscaping Services. Arificial Lawns in Hertfordshire.`}>
+<Layout title={`Perry's Fencing and Landscaping Services  | Arificial Lawns`} description={`Providing premium Fencing and Landscaping Services. Arificial Lawns in Herts, Bucks, Essex & North London.`}>
 
 
 
 
 <Hero
-title="Arificial Lawns Hertfordshire"
+title="Arificial Lawns Hertfordshire, Bedfordshire, Essex & North London"
 sub="Year Round Greenery"
 linkText="Get a Quote Today"
 href="/contact"
@@ -58,14 +63,14 @@ image={heroBg}
   
 </div>  
 </Hero>
-		
+<Areas />	
 <div class="lg:mt-20">
  
 	<ImageOnRight
     
-    title="Artificial Lawns in Hertfordshire"
-    image={work5} 
-    imageAlt="Artificial Lawns in Hertfordshire"
+    title="Artificial Lawns in Hertfordshire, Bedfordshire, Essex & North London"
+    image={img1} 
+    imageAlt="Artificial Lawns in Hertfordshire, Bedfordshire, Essex & North London"
     height={600} 
     width={600}
     href="/contact"
@@ -73,7 +78,7 @@ image={heroBg}
   >
     <Fragment slot="content" >
       <p class="my-4">
-        At RAU Services, we specialise in creating bespoke artificial lawns to elevate your outdoor space. Our commitment to excellence ensures top-quality synthetic turf solutions tailored to meet your requirements.
+        At Perry's Fencing and Landscaping, we specialise in creating bespoke artificial lawns to elevate your outdoor space. Our commitment to excellence ensures top-quality synthetic turf solutions tailored to meet your requirements.
 
 
       </p>
@@ -94,7 +99,7 @@ image={heroBg}
 <div class="bg-white my-10 lg:mt-20 lg:mb-20"> 
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto lg:text-center">
-      <h2 class="block lg:text-center font-semibold text-brand-primary text-2xl lg:text-4xl">The Benefits of Choosing Artificial Grass</h2>
+      <h2 class="block lg:text-center font-bold text-brand-primary text-2xl lg:text-4xl">The Benefits of Choosing Artificial Grass</h2>
     
     </div>
     <div class="mx-auto mt-16 lg:max-w-7xl">
@@ -203,7 +208,7 @@ image={heroBg}
   <CallToAction
     background={heroBg}  
     title="Experience Maintenance Free Perfection"
-    ImageAlt="Garden and patio design in Hertfordshire"
+    ImageAlt="Artificial lawns in Hertfordshire, Bedfordshire, Essex & North London"
     linkText="START YOUR PROJECT TODAY"
     href="/contact">
     <div slot="ctaContent"> 
@@ -212,7 +217,7 @@ image={heroBg}
     </p>
       <p class="mb-4 lg:text-lg">
      
-        Experience the convenience and allure of an artificial lawn tailored to your needs. Contact RAU Services today to discover how our artificial lawns can revolutionize your outdoor living. 
+        Experience the convenience and allure of an artificial lawn tailored to your needs. Contact Perry's Fencing and Landscaping today to discover how our artificial lawns can revolutionize your outdoor living. 
       </p>
     </div>
   </CallToAction>
@@ -221,9 +226,9 @@ image={heroBg}
   <div class="bg-white my-10 lg:mt-20 lg:mb-20"> 
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto lg:text-center">
-        <h2 class="block lg:text-center font-semibold text-brand-primary text-2xl lg:text-4xl">Your Top Choice for Artificial Lawns in Hertfordshire</h2>
+        <h2 class="block lg:text-center font-bold text-brand-primary text-2xl lg:text-4xl">Your Top Choice for Artificial Lawns in Hertfordshire, Bedfordshire, Essex & North London</h2>
         
-        <p class="mt-6 lg:text-lg  text-gray-600">At RAU Services, we take pride in being the premier choice for Artificial Lawns in Hertfordshire. </p>
+        <p class="mt-6 lg:text-lg  text-gray-600">At Perry's Fencing and Landscaping, we take pride in being the premier choice for Artificial Lawns in Hertfordshire, Bedfordshire, Essex & North London. </p>
       </div>
       <div class="mx-auto mt-16 lg:max-w-7xl">
         <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -295,40 +300,40 @@ image={heroBg}
   >
   <div class="flex flex-col  mb-10">
     <Image
-      src={work1}
+      src={work7}
       class="w-full h-full overflow-hidden rounded-lg"
       alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
       format="webp"
     />
-
+  
   </div>
-
+  
   
   
   <div class="flex flex-col  mb-10">
       <Image
-      src={work2}
+      src={work8}
       class="w-full h-full overflow-hidden rounded-lg"
       alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
       format="webp"
     />
-
+  
   </div>
   
   <div class="flex flex-col  mb-10">
       <Image
-      src={work3}
+      src={work9}
       class="w-full h-full overflow-hidden rounded-lg"
       alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
         format="webp"
     />
- 
+  
   </div>
   
   <div class="flex flex-col  mb-10">
@@ -340,7 +345,7 @@ image={heroBg}
       height={600}
       format="webp" 
     />
- 
+  
   </div>
   
   <div class="flex flex-col  mb-10">
@@ -352,7 +357,7 @@ image={heroBg}
       height={600}
       format="webp" 
     />
-
+  
   </div>
   
   <div class="flex flex-col  mb-10">
@@ -364,20 +369,28 @@ image={heroBg}
       height={600}
         format="webp"
     />
- 
+  
   </div>
-
+  
+  
+  </div>
+  
   
   </div>
 
+  <GetaQuote 
+  background={fence2}
+  href="/"
+  linkText="Talk to an Expert"
+  >
+  
+  <div slot="quoteContent"> 
+    <p>
+      Perry's Fencing & Landscaping offer a FREE home survey and no-obligation quote service. Our espert team will come to your property, assess your specific needs, and discuss your project goals. You'll receive expert advice tailored to your requirements and a detailed quote with transparent pricing, allowing you to make informed decisions about your project.
+    </p>
+  
+  </GetaQuote>
 
-  <div class="mx-auto text-center">
-    <a class="block sm:inline-flex items-center text-center uppercase no-underline bg-brand-dark-green px-5 py-3 text-sm sm:text-lg tracking-wider font-bold hover:bg-gray-500 shadow-md text-white rounded-lg" href="/contact">Get Your Project Started Today</a>
-    </div>
-
-  </div>
-
- 
 
 </Layout>  
 

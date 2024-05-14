@@ -9,31 +9,36 @@ import DefaulContentBlock from "../components/Content/DefaultContentBlock.astro"
 import ImageOnRight from "../components/Content/ImageOnRight.astro";
 import ImageOnLeft from "../components/Content/ImageOnLeft.astro";
 import CallToAction from "../components/CallToAction.astro";
+import Areas from "../components/areas.astro";
+import GetaQuote from "../components/GetaQuote.astro";
+
 import Button from "../components/Buttons/PrimaryButton.astro";
 import SubTitle from "../components/Headings/SubTitle.astro";
-import heroBg from "../assets/images/decking1.png";
-import extension3 from "../assets/images/extension3.png";
+import heroBg from "../assets/images/deckbg1.png";
+import extension3 from "../assets/images/extension3.png"; 
 import fence1 from "../assets/images/fence1.png";
 import returf1 from "../assets/images/returf1.png";
 import decking1 from "../assets/images/decking1.png";
 import lawn1 from "../assets/images/lawn1.png";
 import design1 from "../assets/images/design1.png";
-import work1 from "../assets/images/work1.png";
-import work2 from "../assets/images/work2.png";
-import work3 from "../assets/images/work3.png";
-import work4 from "../assets/images/work4.png";
-import work5 from "../assets/images/work5.png";
-import work6 from "../assets/images/work6.png";
+import work1 from "../assets/images/workimg1.png";
+import work2 from "../assets/images/workimg2.png";
+import work3 from "../assets/images/workimg3.png";
+import work4 from "../assets/images/workimg4.png";
+import work5 from "../assets/images/workimg5.png";
+import work6 from "../assets/images/workimg6.png";
 import work7 from "../assets/images/work7.png";
+import fence2 from "../assets/images/fencing2.png";
+
 ---
 
-<Layout title={`RAU Services | Decking Services Hertfordshire`} description={`Providing premium Home, Garden and Landscaping Services. Decking in Hertfordshire.`}>
+<Layout title={`Perry's Fencing and Landscaping Services | Decking Services Hertfordshire, Bedfordshire, Essex & North London`} description={`Providing premium Fencing and Landscaping Services.`}>
 
 
 
 
 <Hero
-title="Decking Hertfordshire"
+title="Decking Hertfordshire, Bedfordshire, Essex & North London"
 sub="Transform Your Outdoor Space"
 linkText="Get a Quote Today"
 href="/contact"
@@ -50,21 +55,20 @@ image={heroBg}
   
 </div>  
 </Hero>
-		
+<Areas />	
 <div class="lg:mt-20">
  
 	<ImageOnRight
     
-    title="Custom Decking Services in Hertfordshire"
-    image={work7} 
+    title="Custom Decking Services in Hertfordshire, Bedfordshire, Essex & North London"
+    image={work4} 
     imageAlt="Quality, Durability, and Peace of Mind"
     height={580} 
     width={600}
-    href="/contact"
-    linkText="GET A FREE QUOTE TODAY"
+ 
   >
     <Fragment slot="content" >
-      <p class="my-4">
+      <p class="my-4"> 
         Our team of professionals is dedicated to ensuring that your outdoor space looks beautiful and functions optimally. With years of experience in the industry, we have developed a reputation for excellence in decking services.
       </p>
       <p class="mb-4">
@@ -83,49 +87,23 @@ We understand the importance of well-designed and durable decking, which is why 
 
 </div>
 
-  <div class="mx-auto max-w-7xl px-6  overflow-hidden py-20">
-    <h2 class="text-brand-primary text-2xl lg:text-4xl font-bold mb-10">Our Decking Services</h2>
-    <p class="text-lg mb-4 text-gray-700">
-   RAU Services provide a full range of custom decking services for homes in Hertfordshire.
-    </p>
-    <h3 class="text-brand-primary text-xl lg:text-2xl font-bold">Deck Design & Installation
-    </h3>
-  <p class="text-lg  my-4 text-gray-700">
-    Our team can help you design and install a deck that meets your specific requirements. We work with a range of materials, including wood, composite, and PVC, to create a deck that is both durable and aesthetically pleasing.
-  </p>
-
-  <h3 class="text-brand-primary text-xl lg:text-2xl font-bold"> Deck Repair and Maintenance
-</h3>
-<p class="text-lg text-gray-700 my-4">
-   
-    If your existing deck needs repair or maintenance, we can help. Our team has extensive experience in repairing and maintaining decks, ensuring that they remain functional and safe for years to come.
-    
-    
-</p>
-
-<h3 class="text-brand-primary text-xl lg:text-2xl font-bold"> Deck Cleaning
-</h3>
-<p class="text-lg my-4 text-gray-700">
-   
-    Over time, decks can become dirty and stained, making them less attractive and more prone to damage. Our team can clean your deck, restoring it to its former glory and helping to prolong its lifespan.
-</p>
-  </div>
+  
 
 
   <CallToAction
     background={heroBg}  
-    title="Dream Decking in Hertfordshire"
-    ImageAlt="Custom decking in Hertfordshire"
+    title="Dream Decking in Hertfordshire, Bedfordshire, Essex & North London"
+    ImageAlt="Custom decking in Hertfordshire, Bedfordshire, Essex & North London"
     linkText="START YOUR PROJECT TODAY"
     href="/contact">
     <div slot="ctaContent"> 
       <p class="mt-6 mb-4 lg:text-lg">
         
-        Transform your outdoor space into a personalized haven with our custom decking services in Hertfordshire. Our skilled craftsmen specialize in crafting decks that seamlessly combine style and functionality, enhancing the appeal of your home's exterior.
+        Transform your outdoor space into a personalized haven with our custom decking services in Hertfordshire, Bedfordshire, Essex & North London. Our skilled craftsmen specialize in crafting decks that seamlessly combine style and functionality, enhancing the appeal of your home's exterior.
 
     </p>
       <p class="mb-4 lg:text-lg">
-        Our bespoke approach ensures durability, aesthetics, and a design uniquely tailored to your preferences. Discover the perfect blend of outdoor luxury and comfort with our custom decking services in Hertfordshire. Elevate your outdoor living – start building your ideal retreat today!
+        Our bespoke approach ensures durability, aesthetics, and a design uniquely tailored to your preferences. Discover the perfect blend of outdoor luxury and comfort with our custom decking services in Hertfordshire, Bedfordshire, Essex & North London. Elevate your outdoor living – start building your ideal retreat today!
      </p>
     </div>
   </CallToAction>
@@ -133,9 +111,9 @@ We understand the importance of well-designed and durable decking, which is why 
   <div class="bg-white my-10 lg:mt-20 lg:mb-20"> 
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto lg:text-center">
-        <h2 class="block lg:text-center font-semibold text-brand-primary text-2xl lg:text-4xl">Your Top Choice for Decking Excellence in Hertfordshire</h2>
+        <h2 class="block lg:text-center font-bold text-brand-primary text-2xl lg:text-4xl">Your Top Choice for Decking Excellence in Hertfordshire, Bedfordshire, Essex & North London</h2>
         
-        <p class="mt-6 lg:text-lg  text-gray-600">RAU Services prides itself on delivering tailored decking solutions specifically designed for Hertfordshire. Our commitment to precision and customer satisfaction ensures that each deck we build encapsulates your unique style and preferences. You can expect dedicated craftsmanship and personalized service that transforms your outdoor space into an exceptional retreat.</p>
+        <p class="mt-6 lg:text-lg  text-gray-600">Perry's Fencing and Landscaping pride ourselves on delivering tailored decking solutions. Our commitment to precision and customer satisfaction ensures that each deck we build encapsulates your unique style and preferences. You can expect dedicated craftsmanship and personalized service that transforms your outdoor space into an exceptional retreat.</p>
       </div>
       <div class="mx-auto mt-16 lg:max-w-7xl">
         <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -207,7 +185,7 @@ We understand the importance of well-designed and durable decking, which is why 
   <div class="flex flex-col  mb-10">
     <Image
       src={work1}
-      class="w-full h-full overflow-hidden rounded-lg"
+      class="overflow-hidden rounded-lg"
       alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
@@ -221,7 +199,7 @@ We understand the importance of well-designed and durable decking, which is why 
   <div class="flex flex-col  mb-10">
       <Image
       src={work2}
-      class="w-full h-full overflow-hidden rounded-lg"
+      class="overflow-hidden rounded-lg"
       alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
@@ -233,7 +211,7 @@ We understand the importance of well-designed and durable decking, which is why 
   <div class="flex flex-col  mb-10">
       <Image
       src={work3}
-      class="w-full h-full overflow-hidden rounded-lg"
+      class="overflow-hidden rounded-lg"
       alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
@@ -245,7 +223,7 @@ We understand the importance of well-designed and durable decking, which is why 
   <div class="flex flex-col  mb-10">
       <Image
       src={work4}
-      class="w-full h-full overflow-hidden rounded-lg"
+      class="overflow-hidden rounded-lg"
       alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
@@ -257,7 +235,7 @@ We understand the importance of well-designed and durable decking, which is why 
   <div class="flex flex-col  mb-10">
       <Image
       src={work5}
-      class="w-full h-full overflow-hidden rounded-lg"
+      class="overflow-hidden rounded-lg"
       alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
@@ -273,7 +251,7 @@ We understand the importance of well-designed and durable decking, which is why 
       alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
-        format="webp"
+        format="webp" 
     />
  
   </div>
@@ -282,13 +260,21 @@ We understand the importance of well-designed and durable decking, which is why 
   </div>
 
 
-  <div class="mx-auto text-center">
-    <a class="block sm:inline-flex items-center text-center uppercase no-underline bg-brand-dark-green px-5 py-3 text-sm sm:text-lg tracking-wider font-bold hover:bg-gray-500 shadow-md text-white rounded-lg" href="/contact">Get Your Project Started Today</a>
-    </div>
-
+  
   </div>
 
- 
+  <GetaQuote 
+  background={fence2}
+  href="/"
+  linkText="Talk to an Expert"
+  >
+  
+  <div slot="quoteContent"> 
+    <p>
+      Perry's Fencing & Landscaping offer a FREE home survey and no-obligation quote service. Our espert team will come to your property, assess your specific needs, and discuss your project goals. You'll receive expert advice tailored to your requirements and a detailed quote with transparent pricing, allowing you to make informed decisions about your project.
+    </p>
+  
+  </GetaQuote>
 
 </Layout>  
 

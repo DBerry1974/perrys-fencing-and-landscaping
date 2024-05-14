@@ -2,6 +2,9 @@
 export const prerender = true;
 import { Image } from 'astro:assets'
 import Layout from "../layouts/Layout.astro";
+import GetaQuote from "../components/GetaQuote.astro";
+import Areas from "../components/areas.astro";
+
 import Hero from "../components/Hero/Hero.astro";
 import WideHero from "../components/Hero/Hero.astro";
 import ImageBlock from "../components/ImageBlock.astro";
@@ -18,27 +21,28 @@ import returf1 from "../assets/images/returf1.png";
 import decking1 from "../assets/images/decking1.png";
 import lawn1 from "../assets/images/lawn1.png";
 import design1 from "../assets/images/design1.png";
-import work1 from "../assets/images/work1.png";
-import work2 from "../assets/images/work2.png";
-import work3 from "../assets/images/work3.png";
-import work4 from "../assets/images/work4.png";
-import work5 from "../assets/images/work5.png";
-import work6 from "../assets/images/work6.png";
+import work1 from "../assets/images/workimg1.png";
+import work2 from "../assets/images/workimg2.png";
+import work3 from "../assets/images/workimg3.png";
+import work4 from "../assets/images/workimg4.png";
+import work5 from "../assets/images/workimg5.png";
+import work6 from "../assets/images/workimg6.png";
 import work7 from "../assets/images/work7.png";
 import returf2 from "../assets/images/returf2.png";
+import fence2 from "../assets/images/fencing2.png";
 
 import garden1 from "../assets/images/garden1.png";
 
 
 ---
 
-<Layout title={`RAU Services | Re-turfing Services Hertfordshire`} description={`Providing premium Home, Garden and Landscaping Services. Re-turfing in Hertfordshire.`}>
+<Layout title={`Perry's Fencing and Landscaping Services | Re-turfing Services Hertfordshire, Bedfordshire, Essex & North London.`} description={`Providing premium Fencing and Landscaping Services. Re-turfing in Herts, Bucks, Essex & North London.`}>
 
 
 
 
 <Hero
-title="Re-turfing Hertfordshire"
+title="Re-turfing Hertfordshire, Bedfordshire, Essex & North London"
 sub="Rejuvenate Your Lawn"
 linkText="Get a Quote Today"
 href="/contact"
@@ -47,17 +51,17 @@ image={heroBg}
 >
 <div slot="heroContent"> 
   <p class="my-6 lg:text-lg">
-    Explore RAU Services' expert re-turfing solutions crafted to revitalise your lawn. Our commitment to precision and client satisfaction ensures that each re-turfing project we undertake transforms your outdoor space, providing a lush and rejuvenated landscape tailored to your desires.
+    Explore Perry's Fencing and Landscaping expert re-turfing solutions crafted to revitalise your lawn. Our commitment to precision and client satisfaction ensures that each re-turfing project we undertake transforms your outdoor space, providing a lush and rejuvenated landscape tailored to your desires.
   </p>  
   
 </div>  
 </Hero>
-		
+<Areas />
 <div class="lg:mt-20">
  
 	<ImageOnRight
     
-    title="Expert Re-turfing Services in Hertfordshire"
+    title="Expert Re-turfing Services in Hertfordshire, Bedfordshire, Essex & North London"
     image={returf2} 
     imageAlt="Quality, Durability, and Peace of Mind"
     height={580} 
@@ -68,11 +72,11 @@ image={heroBg}
     <Fragment slot="content" >
       
       <p class="mb-4">
-        At RAU Services, our dedicated team excels in re-turfing, managing each phase with expertise. From evaluating your lawn's state to skillfully laying down top-grade turf, we prioritize delivering a renewed lawn that not only enhances your property's aesthetics but also improves its practicality. Rely on us to transform your lawn into an inviting and thriving outdoor space you'll delight in.
+        At Perry's Fencing and Landscaping, our dedicated team excels in re-turfing, managing each phase with expertise. From evaluating your lawn's state to skillfully laying down top-grade turf, we prioritize delivering a renewed lawn that not only enhances your property's aesthetics but also improves its practicality. Rely on us to transform your lawn into an inviting and thriving outdoor space you'll delight in.
       </p>
  
       <p class="mb-4">
-        Taking pride in our meticulous approach, we ensure that your re-turfing experience goes beyond just revitalization. Our commitment extends to providing tailored advice on lawn care post-re-turfing, guiding you to maintain the newly laid turf's health and vibrancy. With RAU Services, not only do you receive exceptional re-turfing but also ongoing support to help your lawn flourish for years to come.
+        Taking pride in our meticulous approach, we ensure that your re-turfing experience goes beyond just revitalization. Our commitment extends to providing tailored advice on lawn care post-re-turfing, guiding you to maintain the newly laid turf's health and vibrancy. With Perry's Fencing and Landscaping, not only do you receive exceptional re-turfing but also ongoing support to help your lawn flourish for years to come.
       </p>
  
     </Fragment>
@@ -85,15 +89,15 @@ image={heroBg}
   <CallToAction
     background={heroBg}  
     title="Transform Your Lawn Today"
-    ImageAlt="Re-turfing in Hertfordshire"
+    ImageAlt="Re-turfing in Hertfordshire, Bedfordshire, Essex & North London"
     linkText="START YOUR PROJECT TODAY"
     href="/contact">
     <div slot="ctaContent"> 
       <p class="mt-6 mb-4 lg:text-lg">
-        Are you ready to witness the transformation of your lawn into a lush and vibrant landscape? RAU Services are here to bring your vision to life with our expert re-turfing solutions.
+        Are you ready to witness the transformation of your lawn into a lush and vibrant landscape? Perry's Fencing and Landscaping are here to bring your vision to life with our expert re-turfing solutions.
       </p>
       <p class="mb-4 lg:text-lg">
-        Our dedicated team is eager to discuss your re-turfing needs, offering tailored advice and a commitment to delivering a lawn that not only enhances your property but also becomes a source of pride. Trust RAU Services to turn your lawn into a refreshed and thriving green space – contact us today!    </p>
+        Our dedicated team is eager to discuss your re-turfing needs, offering tailored advice and a commitment to delivering a lawn that not only enhances your property but also becomes a source of pride. Trust Perry's Fencing and Landscaping to turn your lawn into a refreshed and thriving green space – contact us today!    </p>
     </div>
   </CallToAction>
 </div>
@@ -101,10 +105,10 @@ image={heroBg}
   <div class="bg-white my-10 lg:mt-20 lg:mb-20"> 
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto lg:text-center">
-        <h2 class="block lg:text-center font-semibold text-brand-primary text-2xl lg:text-4xl">Your Premier Choice for Re-Turfing Excellence in Hertfordshire
+        <h2 class="block lg:text-center font-bold text-brand-primary text-2xl lg:text-4xl">Your Premier Choice for Re-Turfing Excellence in Hertfordshire, Bedfordshire, Essex & North London
         </h2>
         
-        <p class="mt-6 lg:text-lg  text-gray-600">At RAU Services, we stand as your top choice for re-turfing solutions uniquely crafted for Hertfordshire. Our unwavering commitment to precision and client satisfaction guarantees that every re-turfing project we undertake transforms your outdoor space into a beautiful and comfortable outdoor space.
+        <p class="mt-6 lg:text-lg  text-gray-600">At Perry's Fencing and Landscaping, we stand as your top choice for uniquely crafted re-turfing solutions. Our unwavering commitment to precision and client satisfaction guarantees that every re-turfing project we undertake transforms your outdoor space into a beautiful and comfortable outdoor space.
 
         </p>
       </div>
@@ -164,7 +168,7 @@ image={heroBg}
               <span class="text-xl"> Customer Satisfaction</span>
             </dt>
             <dd class="mt-2 text-base text-gray-600">
-              Prioritizing excellent customer service, we collaborate closely with you to meet your re-turfing needs, ensuring your complete satisfaction with our workmanship. Trust RAU Services to deliver a comprehensive and gratifying re-turfing experience tailored to enhance the beauty of your outdoor space.</dd>
+              Prioritizing excellent customer service, we collaborate closely with you to meet your re-turfing needs, ensuring your complete satisfaction with our workmanship. Trust Perry's Fencing and Landscaping to deliver a comprehensive and gratifying re-turfing experience tailored to enhance the beauty of your outdoor space.</dd>
           </div>
 
        
@@ -258,13 +262,20 @@ image={heroBg}
   </div>
 
 
-  <div class="mx-auto text-center">
-    <a class="block sm:inline-flex items-center text-center uppercase no-underline bg-brand-dark-green px-5 py-3 text-sm sm:text-lg tracking-wider font-bold hover:bg-gray-500 shadow-md text-white rounded-lg" href="/contact">Get Your Project Started Today</a>
-    </div>
-
   </div>
 
- 
+  <GetaQuote 
+  background={fence2}
+  href="/"
+  linkText="Talk to an Expert"
+  >
+  
+  <div slot="quoteContent"> 
+    <p>
+      Perry's Fencing & Landscaping offer a FREE home survey and no-obligation quote service. Our espert team will come to your property, assess your specific needs, and discuss your project goals. You'll receive expert advice tailored to your requirements and a detailed quote with transparent pricing, allowing you to make informed decisions about your project.
+    </p>
+  
+  </GetaQuote>
 
 </Layout>  
 
