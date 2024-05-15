@@ -11,11 +11,28 @@ import SubTitle from "../components/Headings/SubTitle.astro";
 import heroBg from "../assets/images/family1.png";
 import extension6 from "../assets/images/extension6.png";
 import family2 from"../assets/images/couple1.jpeg";
+import Areas from "../components/areas.astro";
 
 ---
 
-<Layout title={`Testimonials | RAU Services`} description={`Testimonials from our many satisified customers.`}>
+<Layout title={`Testimonials | Perry's Fencing and Landscaping`} description={`Testimonials from our many satisified customers.`}>
 
+  <Hero
+title="Perry's Fencing & Landscaping Services Testimonials"
+sub="Customer Satisfaction Guaranteed"
+
+image={heroBg}
+
+>
+<div slot="heroContent"> 
+  <p class="mt-6 mb-4 lg:text-xl">
+    At Perry's Fencing & Landscaping Services, we take immense pride in ensuring customer satisfaction is at the forefront of everything we do. But don't just take our word for it; hear what our valued clients have to say about their experiences with us. From the quality craftsmanship to our attentive customer service, our testimonials speak volumes about the dedication and professionalism of our team.
+  </p> 
+
+  
+</div>  
+</Hero>
+<Areas />
    
   
   <div class="bg-white my-10 lg:my-32">
@@ -38,22 +55,13 @@ import family2 from"../assets/images/couple1.jpeg";
             <svg class="absolute left-0 top-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-600" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
               <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
             </svg>
-            <h3 class="text-xl lg:text-3xl text-white relative font-bold mb-2">Professional and extremely courteous</h3>
+            <h3 class="text-xl lg:text-3xl text-white relative font-bold mb-2">Very professional and worked very efficiently</h3>
 
-            <p class="relative">From contact for an initial quote to completion of my fence installation James and his crew were professional and extremely courteous throughout. The finished work is first rate and I would highly recommend them definitely a 5 star rating from me.
+            <p class="relative">Ben, James and team completed tricky landscaping work for us creating two patios on a two tiered garden. Very professional and worked very efficiently. Clear what pride they took in their work even down to how they looked after working area during works. Have booked in for some fencing work in April.
+
             </p>
           </div>
-          <footer class="mt-8">
-            <div class="flex items-start">
-              
-              <div>
-                <div class="text-base font-medium text-white">Ruth Hughes</div>
-                <div class="text-base font-medium text-white">Fence & Gate Installation
-
-                </div>
-              </div>
-            </div>
-          </footer>
+    
         </blockquote>
       </div>
       <div class="px-6 py-12 md:py-16 md:pl-10 md:pr-0 lg:pl-16">
@@ -63,23 +71,11 @@ import family2 from"../assets/images/couple1.jpeg";
             <svg class="absolute left-0 top-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-600" fill="currentColor" viewBox="0 0 32 32">
               <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
             </svg>
-            <h3 class="text-xl lg:text-3xl text-white relative font-bold mb-2">Very helpful</h3>
-            <p class="relative">James was very helpful, came and gave me a quote quickly. Will definitely be using him again in the future.
+            <h3 class="text-xl lg:text-3xl text-white relative font-bold mb-2">Would recommend to anyone</h3>
+            <p class="relative">Needed a new garden fence. James came round and gave me a few suggestions of which type of fence would be best. Very professional and a reasonable quote. They turned up on the day specified and worked very hard to get the fence done in two days. Would recommend to anyone and I will be using them again in the future.
             </p>
           </div>
-          <footer class="mt-8">
-            <div class="flex items-start">
-              
-              <div>
-                <div class="text-base font-medium text-white">Eleanor Patterson
-
-                </div>
-                <div class="text-base font-medium text-white">Fence & Gate Installation
-
-                </div>
-              </div>
-            </div>
-          </footer>
+      
         </blockquote>
       </div>
 
@@ -90,22 +86,13 @@ import family2 from"../assets/images/couple1.jpeg";
             <svg class="absolute left-0 top-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-600" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
               <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
             </svg>
-            <h3 class="text-xl lg:text-3xl text-white relative font-bold mb-2">Quick response and a good job</h3>
+            <h3 class="text-xl lg:text-3xl text-white relative font-bold mb-2">Excellent standard and efficient</h3>
 
-            <p class="relative">A very nice guy, and a quick response and a good job.l will use them again.
+            <p class="relative">Right from the beginning James was professional, communicated effectively.
+              Work was done to an excellent standard and efficient. Would throughly recommend them.
             </p>
           </div>
-          <footer class="mt-8">
-            <div class="flex items-start">
-              
-              <div>
-                <div class="text-base font-medium text-white">Mrs Hughes</div>
-                <div class="text-base font-medium text-white">Fence & Gate Installation
-
-                </div>
-              </div>
-            </div>
-          </footer>
+        
         </blockquote>
       </div>
       <div class="px-6 py-12 md:py-16 md:pl-10 md:pr-0 lg:pl-16">
@@ -115,18 +102,43 @@ import family2 from"../assets/images/couple1.jpeg";
             <svg class="absolute left-0 top-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-600" fill="currentColor" viewBox="0 0 32 32">
               <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
             </svg>
-            <h3 class="text-xl lg:text-3xl text-white relative font-bold mb-2">An absolute delight to work with</h3>
-            <p class="relative">RAU where an absolute delight to work with on our Garden refurb / landscaping. The team were polite, courteous and always communicated well with us throughout the project, nothing was too big for them and they always made sure we were happy with the work. I would recommend using James, Rich and and the team and because of their great job we will be asking them to the work required on the front of the house. 5 stars for the guys. </p>
+            <h3 class="text-xl lg:text-3xl text-white relative font-bold mb-2">Excellent service</h3>
+            <p class="relative">Excellent service. They installed our patio and retaining walls. I would definitely recommend these guys to anyone.
+            </p>
           </div>
-          <footer class="mt-8">
-            <div class="flex items-start">
-              
-              <div>
-                <div class="text-base font-medium text-white">Nigel</div>
-                <div class="text-base font-medium text-white">Landscaping & Garden refurb</div>
-              </div>
-            </div>
-          </footer>
+         
+        </blockquote>
+      </div>
+
+      <div class="px-6 py-12 md:py-16 md:pl-10 md:pr-0 lg:pl-16">
+     
+        <blockquote class="mt-6 md:flex md:flex-grow md:flex-col">
+          <div class="relative text-lg font-medium text-white md:flex-grow">
+            <svg class="absolute left-0 top-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-600" fill="currentColor" viewBox="0 0 32 32">
+              <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+            </svg>
+            <h3 class="text-xl lg:text-3xl text-white relative font-bold mb-2">Excellent job</h3>
+            <p class="relative">We had our decking, patio and fencing supplied and installed by James and his team. Excellent job they were very considerate and polite. Highly recommend.
+
+            </p>
+          </div>
+         
+        </blockquote>
+      </div>
+
+      <div class="px-6 py-12 md:py-16 md:pl-10 md:pr-0 lg:pl-16">
+     
+        <blockquote class="mt-6 md:flex md:flex-grow md:flex-col">
+          <div class="relative text-lg font-medium text-white md:flex-grow">
+            <svg class="absolute left-0 top-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-600" fill="currentColor" viewBox="0 0 32 32">
+              <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+            </svg>
+            <h3 class="text-xl lg:text-3xl text-white relative font-bold mb-2">Helpful and polite</h3>
+            <p class="relative">Really good service, everyone was very helpful and polite reached my needs with what I wanted doing. would recommend to everyone.
+
+            </p>
+          </div>
+         
         </blockquote>
       </div>
 
@@ -134,18 +146,20 @@ import family2 from"../assets/images/couple1.jpeg";
     </div>
 
 </div>
+<div class="mb-20">
 <CallToAction
 background={extension6}  
 title="Let's Bring Your Ideas to Life Together!"
 ImageAlt="Get a Free No Obligation Quote"
 linkText="GET A FREE QUOTE"
-href="/">
+href="/contact">
 <div slot="ctaContent"> 
   <p class="mt-6 mb-4 lg:text-lg">
-    At RAU Services, we're more than just a company – we're your partners in creating the spaces you dream of. Reach out to our friendly team today, and let's start turning your dreams into reality. We're here to provide guidance, support, and expertise every step of the way. Get in touch for a personalized conversation about your next project!
+    At Perry's Fencing and Landscaping, we're more than just a company – we're your partners in creating the spaces you dream of. Reach out to our friendly team today, and let's start turning your dreams into reality. We're here to provide guidance, support, and expertise every step of the way. Get in touch for a personalised conversation about your next project!
   </p>
 </div>
 </CallToAction>
+</div>
 
 
 

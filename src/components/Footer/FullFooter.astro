@@ -1,0 +1,109 @@
+---
+export const prerender = true;
+const town = "{town}";
+import { Image } from 'astro:assets'
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero/LandingHero.astro";
+import WideHero from "../../components/Hero/Hero.astro";
+import ImageBlock from "../../components/ImageBlock.astro";
+import DefaulContentBlock from "../../components/Content/DefaultContentBlock.astro"; 
+import ImageOnRight from "../../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../../components/Content/ImageOnLeft.astro";
+import CallToAction from "../../components/CallToAction.astro";
+import Button from "../../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../../components/Headings/SubTitle.astro";
+import heroBg from "../../assets/images/fence1.png";
+import extension3 from "../../assets/images/extension3.png";
+import fence1 from "../../assets/images/fence1.png";
+import fence2 from "../../assets/images/fence2.jpg";
+import fence3 from "../../assets/images/fence3.jpg";
+import fence5 from "../../assets/images/fence5.jpg";
+import fence4 from "../../assets/images/fence4.jpg";
+import fence6 from "../../assets/images/fence6.png";
+import fenceRepair from "../../assets/images/fence-repair.png";
+import fenceMaint from "../../assets/images/fence-maintenance.png";
+import clearance from "../../assets/images/clearance.png";
+
+import returf1 from "../../assets/images/returf1.png";
+import decking1 from "../../assets/images/decking1.png";
+import lawn1 from "../../assets/images/lawn1.png";
+import design1 from "../../assets/images/design1.png";
+import work1 from "../../assets/images/work1.png";
+import work2 from "../../assets/images/work2.png";
+import work3 from "../../assets/images/work3.png";
+import work4 from "../../assets/images/work4.png";
+import work5 from "../../assets/images/work5.png";
+import work6 from "../../assets/images/work6.png";
+import work7 from "../../assets/images/work7.png";
+
+import FenceInstallersHerts from "../../components/LocationData/FenceInstallersHerts";
+
+---
+
+
+<footer class="mx-auto max-w-7xl mt-1 px-6 bg-gray-600">
+
+
+  
+    <div
+    class="pt-10 grid w-full lg:gap-10 lg:grid-cols-3"
+    >
+    <div class="flex flex-col mb-10 pb-4">
+       <h2 class="text-base lg:text-lg font-semibold text-gray-300">Services</h2>
+    
+       <ul role="list" class="mt-6 space-y-4">
+        <li>
+          <a href="/fencing" class="text-sm leading-6 text-white hover:text-gray-300">Fencing</a>
+        </li>
+        <li>
+            <a href="/patio-and-garden-design" class="text-sm leading-6 text-white hover:text-gray-300">Patio & Garden Design</a>
+          </li>
+          <li>
+            <a href="/decking" class="text-sm leading-6 text-white hover:text-gray-300">Decking</a>
+          </li>
+          <li>
+            <a href="/returfing" class="text-sm leading-6 text-white hover:text-gray-300">Re-turfing</a>
+          </li>
+          <li>
+            <a href="/artificial-lawns" class="text-sm leading-6 text-white hover:text-gray-300">Artificial Lawns</a>
+          </li>
+       
+      </ul>
+
+    </div>
+
+    <div class="flex flex-col mb-10 pb-4">
+        <h2 class="text-base lg:text-lg font-semibold text-gray-300">Company</h2>
+    
+       <ul role="list" class="mt-6 space-y-4">
+        <li>
+          <a href="/testimonials" class="text-sm leading-6 text-white hover:text-gray-300">Testimonials</a>
+        </li>
+        <li>
+            <a href="/terms-and-conditions" class="text-sm leading-6 text-white hover:text-gray-300">Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="/privacy-policy" class="text-sm leading-6 text-white hover:text-gray-300">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="/contact" class="text-sm leading-6 text-white hover:text-gray-300">Contact</a>
+          </li>
+         
+       
+      </ul>
+ 
+     </div>
+
+    <div class="flex flex-col overflow-hidden mb-10 pb-4 ">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1vxnDlCQR6QqsdwZMOt-C-zhIwc4dY4k&ehbc=2E312F&noprof=1" width="640" height="300"></iframe>
+    </div>
+
+  
+
+    </div>
+
+ 
+    <p class="py-20 text-base text-white text-center border-t">
+        &copy; {new Date().getFullYear()} Perry's Fencing & Landscaping. All rights reserved.
+      </p>
+</footer>

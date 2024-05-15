@@ -1,0 +1,82 @@
+---
+export const prerender = true;
+import { Image } from 'astro:assets'
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero/Hero.astro";
+import DefaulContentBlock from "../components/Content/DefaultContentBlock.astro";
+import ImageOnRight from "../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../components/Content/ImageOnLeft.astro";
+import CallToAction from "../components/CallToAction.astro";
+import Button from "../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../components/Headings/SubTitle.astro";
+import BigQuote from "../components/BigQuote.astro";
+
+import heroBg from "../assets/images/family4.png";
+import extension5 from "../assets/images/extension5.png";
+import extension6 from "../assets/images/extension6.png";
+import extension10 from "../assets/images/extension10.png";
+
+---
+
+<Layout title={`Terms and Conditions | Perry's Fencing & Landscaping`} description={`Providing premium Fencing, Garden and Landscaping Services in Hertfordshire, Bedfordshire, Essex & North London.`}>
+
+
+<div class="max-w-4xl mx-auto my-20">
+
+    <h1 class="text-3xl mb-10">Terms and Conditions</h1>
+    <p>
+        Welcome to Perry's Fencing & Landscaping Services. By accessing or using our website, you agree to comply with and be bound by the following terms and conditions of use. Please read these terms carefully before using our website.
+    </p>
+
+    <h3 class="font-bold my-4">1. Use of Website:</h3>
+    <p>
+       
+        a. You agree to use our website only for lawful purposes and in accordance with these terms and conditions. <br />
+        b. You are responsible for ensuring that all information you provide to us is accurate, current, and complete.      
+    </p>
+
+      <h3 class="font-bold my-4">2. Intellectual Property:</h3>
+      <p>
+        a. All content on our website, including text, graphics, logos, images, and software, is the property of Perry's Fencing & Landscaping Services and is protected by copyright laws. <br />
+        b. You may not reproduce, distribute, modify, or transmit any content from our website without our prior written consent.
+        </p>
+
+        <h3 class="font-bold my-4">3. Links to Third-Party Websites:</h3>
+        <p>
+            a. Our website may contain links to third-party websites for your convenience. However, we do not endorse or control these websites and are not responsible for their content or accuracy. <br />
+            b. Your use of third-party websites is subject to their terms and conditions and privacy policies.
+          </p>
+
+          <h3 class="font-bold my-4">4. Limitation of Liability:</h3>
+          <p>
+            
+            a. Perry's Fencing & Landscaping Services and its affiliates, officers, directors, employees, agents, and suppliers shall not be liable for any damages arising out of or in any way connected with your use of our website.
+            </p>
+
+            <h3 class="font-bold my-4">5. Indemnification:</h3>
+            <p>
+            
+                You agree to indemnify and hold Perry's Fencing & Landscaping Services and its affiliates, officers, directors, employees, agents, and suppliers harmless from any claims, damages, losses, liabilities, costs, or expenses arising out of or in connection with your use of our website.
+              </p>
+
+              <h3 class="font-bold my-4">6. Governing Law:</h3>
+              <p>
+                
+                These terms and conditions shall be governed by and construed in accordance with the laws of the United Kingdom. Any disputes arising out of or relating to these terms and conditions shall be resolved exclusively in the courts of the United Kingdom.
+                </p>
+
+                <h3 class="font-bold my-4">7. Changes to Terms and Conditions:</h3>
+                <p>
+                    
+                    We reserve the right to modify or update these terms and conditions at any time without prior notice. Your continued use of our website after any changes indicates your acceptance of the updated terms and conditions.
+                  </p>
+
+                 
+                  <p class="my-20 font-bold">
+                    If you have any questions or concerns about these terms and conditions, please contact us at info@perrysfencingandlandscaping.co.uk. <br />Thank you for choosing Perry's Fencing & Landscaping Services.
+                  </p>
+
+</div>
+
+</Layout>  
+
