@@ -11,6 +11,9 @@ import ImageOnRight from "../../components/Content/ImageOnRight.astro";
 import ImageOnLeft from "../../components/Content/ImageOnLeft.astro";
 import CallToAction from "../../components/CallToAction.astro";
 import Button from "../../components/Buttons/PrimaryButton.astro";
+import Areas from "../../components/LandingAreas.astro";
+import GetaQuote from "../../components/GetaQuote.astro";
+
 import SubTitle from "../../components/Headings/SubTitle.astro";
 import heroBg from "../../assets/images/fence1.png";
 import extension3 from "../../assets/images/extension3.png";
@@ -24,24 +27,23 @@ import fenceRepair from "../../assets/images/fence-repair.png";
 import fenceMaint from "../../assets/images/fence-maintenance.png";
 import clearance from "../../assets/images/clearance.png";
 import patio5 from "../../assets/images/patio5.png";
-
-import returf3 from "../../assets/images/returf3.png";
-import decking1 from "../../assets/images/decking1.png";
-import lawn1 from "../../assets/images/lawn1.png";
-import design1 from "../../assets/images/design1.png";
-import work1 from "../../assets/images/work1.png";
-import work2 from "../../assets/images/work2.png";
-import work3 from "../../assets/images/work3.png";
-import work4 from "../../assets/images/work4.png";
-import work5 from "../../assets/images/work5.png";
-import work6 from "../../assets/images/work6.png";
+import returf1 from "../../assets/images/returf2.png";
+import decking1 from "../../assets/images/deck1.png";
+import lawn1 from "../../assets/images/artificial2.png";
+import design1 from "../../assets/images/design2.png";
+import work1 from "../../assets/images/workimg1.png";
+import work2 from "../../assets/images/workimg2.png";
+import work3 from "../../assets/images/workimg3.png";
+import work4 from "../../assets/images/workimg4.png";
+import work5 from "../../assets/images/workimg5.png";
+import work6 from "../../assets/images/workimg6.png";
 import work7 from "../../assets/images/work7.png";
 
 
 
 ---
 
-<Layout title={`RAU Services | Landscape Gardeners Hammerfield. Patios, Gardens & more`} description={`The top choice landscape gardeners in Hammerfield. Decking, Patios and Gardens, Artificial Lawns, Re-turfing and more. FREE site survey and quote.`}>
+<Layout title={`Perry's Fencing & Landscaping | Landscape Gardeners Hammerfield. Patios, Gardens & more`} description={`The top choice landscape gardeners in Hammerfield. Decking, Patios and Gardens, Artificial Lawns, Re-turfing and more. FREE site survey and quote.`}>
 
 
 
@@ -56,11 +58,12 @@ image={heroBg}
 >
 <div slot="heroContent"> 
   <p class="mt-6 mb-10 lg:text-lg">
-    Transform your outdoor space today with RAU Services, professional landscape gardeners in Hammerfield.
+    Transform your outdoor space today with Perry's Fencing & Landscaping, professional landscape gardeners in Hammerfield.
   </p>  
   
 </div>  
 </Hero>
+<Areas />
 		
 <div class="lg:mt-20">
  
@@ -76,167 +79,205 @@ image={heroBg}
   >
     <Fragment slot="content" >
       <p class="my-4">
-        RAU Services are professional landscapers with many years of experience of working on landscaping projects just like yours in Hammerfield.
+        Perry's Fencing & Landscaping are professional landscapers with many years of experience of working on landscaping projects just like yours in Hammerfield.
         
       </p>
       <p class="mb-4">
-        With a commitment to a customer-friendly approach, RAU Services offers free consultations to discuss your vision, preferences, and specific needs. 
+        With a commitment to a customer-friendly approach, Perry's Fencing & Landscaping offers free consultations to discuss your vision, preferences, and specific needs. 
         
       </p>
       <p class="mb-4">
-        Our collaborative process ensures that your outdoor space reflects your individual style and enhances the beauty of your property. Whether you're dreaming of a tranquil patio, a vibrant garden, or a functional deck space, RAU Services is dedicated to providing practical and personalized landscaping solutions in Hammerfield. Contact us today to bring your outdoor vision to life.
+        Our collaborative process ensures that your outdoor space reflects your individual style and enhances the beauty of your property. Whether you're dreaming of a tranquil patio, a vibrant garden, or a functional deck space, Perry's Fencing & Landscaping is dedicated to providing practical and personalized landscaping solutions in Hammerfield. Contact us today to bring your outdoor vision to life.
       </p>
  
     </Fragment>
   </ImageOnRight>
 
-  <div class="mx-auto max-w-6xl px-6 lg:mt-10  overflow-hidden">
-    <h2 class="text-brand-primary text-3xl lg:text-4xl font-bold text-center lg:mb-20">Garden & Landscaping Services in Hammerfield</h2>
-  
-  <div
-  class="mt-12 grid w-full lg:gap-10 lg:grid-cols-2"
-  >
-  
-  <div class="flex flex-col  mb-10">
-    <Image
-    src={design1}
-    class="w-full h-full overflow-hidden rounded-lg"
-    alt="Choose us for your garden makeover!"
-    width={600}
-    height={400}
-    format="webp" 
-  />
-  <h3 class="text-brand-primary text-xl lg:text-3xl font-bold py-4">Patio & Garden Design</h3>
-<p class="lg:text-xl">
-  Expertly designed patios and gardens including our stylish pergola installations.
+  <div class="mx-auto max-w-7xl px-2 lg:mt-10  overflow-hidden">
+    <h2 class="text-brand-primary text-3xl lg:text-4xl font-bold text-center">Garden & Landscaping Services in Hammerfield</h2>
 
-</p>
-<div class="w-1/2">
-  <Button
-  href="/patio-and-garden-design">Find Out More</Button>
-  </div>
-</div>
-
-  
-  
-  <div class="flex flex-col  mb-10">
-      <Image
-      src={returf3}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Landscape gardeners including patio and garden design"
-      width={600}
-      height={400}
-      format="webp"
-    />
-    <h3 class="text-brand-primary text-xl lg:text-3xl font-bold py-4">Re-turfing</h3>
-  <p class="lg:text-xl">Renew and refresh your lawn with our professional re-turfing services.
-  </p>
-  <div class="w-1/2">
-    <Button
-    href="/returfing">Find Out More</Button>
-    </div>
-  </div>
-  
-  <div class="flex flex-col  mb-10">
-      <Image
-      src={decking1}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Landscape gardeners - your top choice local garden designer"
-      width={600}
-      height={400}
-        format="webp"
-    />
-    <h3 class="text-brand-primary text-xl lg:text-3xl font-bold py-4">Decking</h3>
-  <p class="lg:text-xl">
+    <div class="mx-auto overflow-hidden pb-20">
     
-    Create inviting and functional outdoor spaces with our durable and beautifully crafted decking solutions.  </p>
-  <div class="w-1/2">
-    <Button
-    href="/decking">Find Out More</Button>
-    </div>
-  </div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 mt-16">
+        <div
+          class="grid min-h-full grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 gap-8">
+       <!-- START SERVICE -->   
+      <div class="relative flex rounded-lg overflow-hidden">
+        <Image
+          src={fence1}
+          alt="fencing"
+          width={600}
+          height={400}
+          class="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div class="relative flex w-full flex-col items-start justify-between bg-black bg-opacity-60 px-6 py-6 lg:py-24">
+          <h2 class="text-2xl lg:text-6xl font-bold text-gray-300 mb-4">
+            Fencing
+           
+          </h2>
+          
+            <p class="text-white text-xl lg:text-2xl">
+              Secure your property with our sturdy and reliable fencing solutions.
+            </p>
+         
+          <a
+            href="/fencing"
+            class="mt-4 rounded-md bg-gradient-to-b from-brand-primary to-brand-secondary py-2.5 px-4 text-lg font-medium text-white hover:bg-gradient-to-t hover:from-brand-primary hover:to-brand-secondary"
+          >
+            Find Out More
+          </a>
+        </div>
+      </div>
+         <!-- END SERVICE -->   
   
-  <div class="flex flex-col  mb-10">
-      <Image
-      src={lawn1}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Trusted traders - patio and garden design, decking, block paving and more."
-      width={600}
-      height={400}
-      format="webp" 
-    />
-    <h3 class="text-brand-primary text-xl lg:text-3xl font-bold py-4">Artificial Lawns</h3>
-  <p class="lg:text-xl">
-    Enjoy the beauty of a lush green lawn all year round with our high-quality artificial grass options.
-
-  </p>
-  <div class="w-1/2">
-    <Button
-    href="/artificial-lawns">Find Out More</Button>
+            <!-- START SERVICE -->   
+      <div class="relative flex rounded-lg overflow-hidden">
+        <Image
+          src={decking1}
+          alt="fencing"
+          width={600}
+          height={400}
+          class="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div class="relative flex w-full flex-col items-start justify-between bg-black bg-opacity-60 px-6  py-6 lg:py-24">
+          <h2 class="text-2xl lg:text-6xl font-bold text-gray-300 mb-4">
+            Decking
+           
+          </h2>
+          
+            <p class="text-white text-xl lg:text-2xl">
+              Create inviting and functional outdoor spaces with our durable and beautifully crafted decking solutions.
+            </p>
+         
+          <a
+            href="/decking"
+            class="mt-4 rounded-md bg-gradient-to-b from-brand-primary to-brand-secondary py-2.5 px-4 text-lg font-medium text-white hover:bg-gradient-to-t hover:from-brand-primary hover:to-brand-secondary"
+          >
+            Find Out More
+          </a>
+        </div>
+      </div>
+         <!-- END SERVICE --> 
     </div>
-  </div>
-
-  <div class="flex flex-col  mb-10">
-    <Image
-      src={fence1}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Landscape gardeners including patio and garden design"
-      width={600}
-      height={400}
-      format="webp"
-    />
-    
-   <h3 class="text-brand-primary text-xl lg:text-3xl font-bold py-4">Fencing</h3>
-  <p class="lg:text-xl">Secure your property with our sturdy and reliable fencing solutions.
-
-  </p>
-  <div class="w-1/2">
-    <Button
-    href="/fencing">Find Out More</Button>
+  
+          <!-- START SERVICE -->   
+          <div class="relative flex rounded-lg overflow-hidden my-10">
+            <Image
+              src={design1}
+              alt="fencing"
+              width={600}
+              height={400}
+              class="absolute inset-0 h-full w-full object-cover object-center"
+            />
+            <div class="relative flex w-full flex-col items-start justify-between bg-black bg-opacity-60 px-6  py-6 lg:py-24">
+              <h2 class="text-2xl lg:text-6xl font-bold text-gray-300 mb-4">
+                Patio & Garden Design
+               
+              </h2>
+              
+                <p class="text-white text-xl lg:text-2xl">
+                  
+                  Elevate your outdoor living spaces with our expertly designed patios and gardens including our stylish pergola installations.
+                </p>
+             
+              <a
+                href="/patio-and-garden-design"
+                class="mt-4 rounded-md bg-gradient-to-b from-brand-primary to-brand-secondary py-2.5 px-4 text-lg font-medium text-white hover:bg-gradient-to-t hover:from-brand-primary hover:to-brand-secondary"
+              >
+                Find Out More
+              </a>
+            </div>
+          </div>
+             <!-- END SERVICE --> 
+  
+             <div
+             class="grid min-h-full grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 gap-8">
+          <!-- START SERVICE -->   
+         <div class="relative flex rounded-lg overflow-hidden">
+           <Image
+             src={returf1}
+             alt="fencing"
+             width={600}
+             height={400}
+             class="absolute inset-0 h-full w-full object-cover object-center"
+           />
+           <div class="relative flex w-full flex-col items-start justify-between bg-black bg-opacity-60 px-6  py-6 lg:py-24">
+             <h2 class="text-2xl lg:text-6xl font-bold text-gray-300 mb-4">
+              Re-turfing
+              
+             </h2>
+             
+               <p class="text-white text-xl lg:text-2xl">
+               
+                Renew and refresh your lawn with our professional re-turfing services.
+               </p>
+            
+             <a
+               href="/returfing"
+               class="mt-4 rounded-md bg-gradient-to-b from-brand-primary to-brand-secondary py-2.5 px-4 text-lg font-medium text-white hover:bg-gradient-to-t hover:from-brand-primary hover:to-brand-secondary"
+             >
+               Find Out More
+             </a>
+           </div>
+         </div>
+            <!-- END SERVICE -->   
+     
+               <!-- START SERVICE -->   
+         <div class="relative flex rounded-lg overflow-hidden">
+           <Image
+             src={lawn1}
+             alt="fencing"
+             width={600}
+             height={400}
+             class="absolute inset-0 h-full w-full object-cover object-center"
+           />
+           <div class="relative flex w-full flex-col items-start justify-between bg-black bg-opacity-60 px-6  py-6 lg:py-24">
+             <h2 class="text-2xl lg:text-6xl font-bold text-gray-300 mb-4">
+              Artificial Lawns
+              
+             </h2>
+             
+               <p class="text-white text-xl lg:text-2xl">
+              
+                Enjoy the beauty of a lush green lawn all year round with our high-quality artificial turf options.             </p>
+            
+             <a
+               href="/artificial-lawns"
+               class="mt-4 rounded-md bg-gradient-to-b from-brand-primary to-brand-secondary py-2.5 px-4 text-lg font-medium text-white hover:bg-gradient-to-t hover:from-brand-primary hover:to-brand-secondary"
+             >
+               Find Out More
+             </a>
+           </div>
+         </div>
+            <!-- END SERVICE --> 
+  
+        </div>
+      </div>
     </div>
-  </div>
+  
+ 
   
   
-  <div class="flex flex-col  mb-10">
-      <Image
-      src={clearance}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Landscape gardeners - a great job guaranteed"
-      width={600}
-      height={400}
-        format="webp"
-    />
-    <h3 class="text-brand-primary text-xl lg:text-3xl font-bold py-4"> Garden Clearance</h3>
-  <p class="lg:text-xl">
-   
-Restore order and beauty to your garden with our thorough and fully professional garden clearance services. 
-  </p>
-  <div class="w-1/2">
-    <Button
-    href="/garden-clearance">Find Out More</Button>
-    </div>
-  </div>
   
-  </div>
   </div>
 
   <ImageOnLeft
     
     title="Transforming Outdoor Spaces with Expertise in Hammerfield"
     image={fence2} 
-    imageAlt="Landscaping gardeners"
+    imageAlt="Landscaping gardeners" 
     height={600} 
     width={600}
   >
     <Fragment slot="content" >
       <p class="my-4">
-        At RAU Services, our team of experienced landscape gardeners and garden designers is dedicated to delivering a fantastic job on every landscaping project. Whether it's creating a new fence to enhance privacy, providing reliable garden maintenance, or constructing new decking for outdoor entertainment, we take pride in our ability to transform your outdoor space with precision and creativity.
+        At Perry's Fencing & Landscaping, our team of experienced landscape gardeners and garden designers is dedicated to delivering a fantastic job on every landscaping project. Whether it's creating a new fence to enhance privacy, providing reliable garden maintenance, or constructing new decking for outdoor entertainment, we take pride in our ability to transform your outdoor space with precision and creativity.
       </p>
       <p class="mb-4">
         Our reliable service is not just about completing garden work; it's a commitment to customer satisfaction. We offer a fair price for our landscaping projects, ensuring that you receive top-notch quality without breaking the bank. 
       </p>
       <p class="mb-4">
-        From the initial consultation to the final touches, RAU Services provides a comprehensive build service, making us your go-to partner for all your landscaping needs. Trust us to bring your outdoor vision to life, as we go above and beyond to ensure every aspect of your project is handled with expertise and care.     
+        From the initial consultation to the final touches, Perry's Fencing & Landscaping provides a comprehensive build service, making us your go-to partner for all your landscaping needs. Trust us to bring your outdoor vision to life, as we go above and beyond to ensure every aspect of your project is handled with expertise and care.     
       </p>
      
  
@@ -367,46 +408,6 @@ Restore order and beauty to your garden with our thorough and fully professional
    
   </div>
 
-  
-
- 
-<section class="bg-white px-6 pb-10 lg:px-8">
-    <h2 class="text-3xl lg:text-5xl font-bold text-center mb-10 text-brand-primary">Transforming Gardens, Enriching Lives</h2>
-    <figure class="mx-auto max-w-4xl">
-      <p class="sr-only">5 out of 5 stars</p>
-      <div class="flex gap-x-1 text-yellow-600">
-        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-        </svg>
-        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-        </svg>
-        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-        </svg>
-        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-        </svg>
-        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-        </svg>
-      </div>
-      <blockquote class="mt-10 text-xl font-semibold leading-8 tracking-tight text-gray-900 sm:text-2xl sm:leading-9">
-        <p>“RAU where an absolute delight to work with on our Garden refurb / landscaping. The team were polite, courteous and always communicated well with us throughout the project, nothing was too big for them and they always made sure we were happy with the work. I would recommend using James, Rich and and the team and because of their great job we will be asking them to the work required on the front of the house.”</p>
-      </blockquote>
-      <figcaption class="mt-10 flex items-center gap-x-6">
-        
-        <div class="text-sm leading-6">
-          <div class="font-semibold text-gray-900">Nigel</div>
-          <div class="mt-0.5 text-gray-600">Landscaping Project</div>
-        </div>
-      </figcaption>
-    </figure>
-  </section>
-
-
-
-  
   <div class="mx-auto bg-gray-800 px-6 lg:mt-10  overflow-hidden py-20">
     <h2 class="text-white text-2xl lg:text-6xl font-bold  mb-10">Our Work</h2>
   <p class="text-white text-lg lg:text-xl">Take a look at some of our projects and the team at work.</p>
@@ -416,8 +417,8 @@ Restore order and beauty to your garden with our thorough and fully professional
   <div class="flex flex-col  mb-10">
     <Image
       src={work1}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Landscape gardeners - from decking to raised beds"
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
       format="webp"
@@ -430,8 +431,8 @@ Restore order and beauty to your garden with our thorough and fully professional
   <div class="flex flex-col  mb-10">
       <Image
       src={work2}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Landscape gardeners"
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
       format="webp"
@@ -442,8 +443,8 @@ Restore order and beauty to your garden with our thorough and fully professional
   <div class="flex flex-col  mb-10">
       <Image
       src={work3}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Landscape gardeners"
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
         format="webp"
@@ -454,8 +455,8 @@ Restore order and beauty to your garden with our thorough and fully professional
   <div class="flex flex-col  mb-10">
       <Image
       src={work4}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Landscape gardeners"
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
       format="webp" 
@@ -466,8 +467,8 @@ Restore order and beauty to your garden with our thorough and fully professional
   <div class="flex flex-col  mb-10">
       <Image
       src={work5}
-      class="w-full h-full overflow-hidden rounded-lg"
-      alt="Landscape gardeners"
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
       format="webp" 
@@ -479,10 +480,10 @@ Restore order and beauty to your garden with our thorough and fully professional
       <Image
       src={work6}
       class="w-full h-full overflow-hidden rounded-lg"
-      alt="Fencing and landscaping services"
+      alt="Rubber roofs - durable EPDM roofing"
       width={600}
       height={600}
-        format="webp"
+        format="webp" 
     />
  
   </div>
@@ -491,33 +492,23 @@ Restore order and beauty to your garden with our thorough and fully professional
   </div>
 
 
-  <div class="mx-auto text-center">
-    <a class="block sm:inline-flex items-center text-center uppercase no-underline bg-brand-dark-green px-5 py-3 text-sm sm:text-lg tracking-wider font-bold hover:bg-gray-500 shadow-md text-white rounded-lg" href="/contact">Get Your Project Started Today</a>
-    </div>
-
-
+  
   </div>
 
-  <div class="my-20">
+  
+    <GetaQuote 
+    background={fence2}
+    href="/contact"
+    linkText="Talk to an Expert"
+    >
+    
+    <div slot="quoteContent"> 
+      <p>
+        Perry's Fencing & Landscaping offer a FREE home survey and no-obligation quote service. Our espert team will come to your property, assess your specific needs, and discuss your project goals. You'll receive expert advice tailored to your requirements and a detailed quote with transparent pricing, allowing you to make informed decisions about your project.
+      </p>
+    
+    </GetaQuote>
 
-  <CallToAction
-  background={heroBg}  
-  title="Request Your Free Site Survey Today"
-  ImageAlt="Request Your Free Site Survey Today"
-  linkText="GET STARTED"
-  href="/contact">
-  <div slot="ctaContent"> 
-    <p class="mt-6 mb-4 lg:text-lg">
-      Your dream garden is just a survey away. Our team of skilled landscape gardeners have years of experience working on gardens in Hammerfield like yours. We offer a FREE site survey complete with no obligation quote.
-    </p>
-    <p class="mb-4 lg:text-lg">
-      Get in touch today and get your landscaping project started. 
-    </p>
-  </div>
-
-
-</CallToAction>
-</div>
 
 </Layout>  
 
