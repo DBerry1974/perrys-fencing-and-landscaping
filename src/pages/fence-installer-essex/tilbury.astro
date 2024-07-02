@@ -1,0 +1,604 @@
+---
+export const prerender = true;
+const town = "Tilbury";
+import { Image } from 'astro:assets'
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero/LandingHero.astro";
+import WideHero from "../../components/Hero/Hero.astro";
+import ImageBlock from "../../components/ImageBlock.astro";
+import DefaulContentBlock from "../../components/Content/DefaultContentBlock.astro"; 
+import ImageOnRight from "../../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../../components/Content/ImageOnLeft.astro";
+import CallToAction from "../../components/CallToAction.astro";
+import Button from "../../components/Buttons/PrimaryButton.astro";
+import GetaQuote from "../../components/GetaQuote.astro"; 
+
+import SubTitle from "../../components/Headings/SubTitle.astro";
+import heroBg from "../../assets/images/fence1.png";
+import extension3 from "../../assets/images/extension3.png";
+import fence1 from "../../assets/images/fence1.png";
+import fence2 from "../../assets/images/fence2.jpg";
+import fence3 from "../../assets/images/fence3.jpg";
+import fence5 from "../../assets/images/fence5.jpg";
+import fence4 from "../../assets/images/fence4.jpg";
+import fence6 from "../../assets/images/fence6.png";
+import fenceRepair from "../../assets/images/fence-repair.png";
+import fenceMaint from "../../assets/images/fence-maintenance.png";
+import clearance from "../../assets/images/clearance.png";
+import Areas from "../../components/areas.astro";
+
+import returf1 from "../../assets/images/returf1.png";
+import decking1 from "../../assets/images/decking1.png";
+import lawn1 from "../../assets/images/lawn1.png";
+import design1 from "../../assets/images/design1.png";
+import work1 from "../../assets/images/perry-fence1.png";
+import work2 from "../../assets/images/perry-fence2.png";
+import work3 from "../../assets/images/perry-fence3.png";
+import work4 from "../../assets/images/perry-fence4.png";
+import work5 from "../../assets/images/perry-fence5.png";
+import work6 from "../../assets/images/perry-fence6.png";
+import work7 from "../../assets/images/work7.png";
+import img1 from "../../assets/images/fencing2.png";
+import img2 from "../../assets/images/perry-fence5.png";
+import img3 from "../../assets/images/perry-fence1.png";
+import img4 from "../../assets/images/perry-fence4.png";
+
+
+
+---
+
+<Layout title={`Perry's Fencing & Landscaping Services | Fence installer Tilbury. Quality fencing solutions.`} description={`Over 20 years experience in providing premium Garden and Landscaping Services. Fencing installation, repair and maintenance services in Tilbury. Free home survey and quote.`}>
+
+
+
+
+<Hero
+title="Fence installer Tilbury"
+sub="Quality Fencing Services in Tilbury"
+linkText="Get a Quote Today"
+href="/contact"
+image={heroBg}
+
+>
+<div slot="heroContent"> 
+  <p class="mt-6 mb-4 lg:text-lg">
+    Welcome to Perry's Fencing & Landscaping, your leading choice for professional fencing solutions. Let us transform your property into a haven, enhancing both its aesthetic appeal and security. We take pride in delivering bespoke solutions that reflect the unique character of your Tilbury residence.
+  </p>
+  <p class="mb-10 lg:text-lg">
+    Whether you're considering a classic wooden fence, a modern vinyl installation, or a unique bespoke design, Perry's Fencing & Landscaping is here to turn your fencing ideas into reality. Our commitment goes beyond skilled craftsmanship – we aim to understand your vision and deliver results that surpass your expectations.
+  </p>  
+  
+</div>  
+</Hero>
+<Areas />
+		
+<div class="lg:mt-20">
+ 
+	<!--<ImageOnRight
+    
+    title="Your Trusted Fencing Partner in Tilbury"
+    image={fence1} 
+    imageAlt="Fence installer"
+    height={580} 
+    width={600}
+    href="/contact"
+    linkText="GET A FREE QUOTE TODAY"
+  >
+    <Fragment slot="content" >
+      <p class="my-4">
+        At Perry's Fencing & Landscaping, we understand the importance of a personal touch, which is why we prioritize direct and timely communication. Our team ensures quick responses to your inquiries, making the process seamless and stress-free. Unlike automated systems, we guarantee that you will always be in contact with a knowledgeable and friendly human being, ready to assist you every step of the way.
+     </p>
+      <p class="mb-4">
+        We believe in transparency and strive to provide accurate assessments that align with your vision and financial considerations.
+      </p>
+      <p class="mb-4">
+        With Perry's Fencing & Landscaping, you're not just a client; you're part of our extended family. Experience the difference of working with a company that values open communication, expertise, and a personal connection. Let us turn your ideas into reality – because your satisfaction is our ultimate goal.
+      </p>
+ 
+    </Fragment>
+  </ImageOnRight> -->
+
+  <ImageOnRight
+    
+    title="Expert Fencing Services in Tilbury"
+    image={img1} 
+    imageAlt="Fence installers"
+    height={480} 
+    width={600}
+    href="/contact"
+    linkText="GET A FREE QUOTE TODAY"
+  >
+    <Fragment slot="content" >
+      <p class="my-4">
+        A well-designed and installed fence not only adds to the aesthetic appeal of your property but also provides privacy, security, and safety. Our team of professionals has years of experience in designing and installing fences for residential and commercial properties.
+     </p>
+      <p class="mb-4">
+        We understand the importance of a sturdy and long-lasting fence that can withstand the test of time and weather. That's why we use only the highest quality materials and techniques to create a fence that meets your specific needs and budget. Whether you need a fence for privacy, security, or decoration, we have got you covered.
+      </p>
+     
+ 
+    </Fragment>
+  </ImageOnRight>
+
+</div>
+
+
+
+  </div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
+    <div class="mx-auto lg:text-center">
+      <h2 class="block lg:text-center font-bold text-brand-primary text-2xl lg:text-4xl">Quality Garden Fencing in Tilbury</h2>
+      
+      <p class="mt-6 lg:text-lg  text-gray-600"> Transform your outdoor space with our expertly crafted garden fencing solutions. At Perry's Fencing Services, we understand that a garden is more than just an outdoor area – it’s an extension of your home, a place for relaxation, entertainment, and personal expression. Our garden fencing options are designed to enhance the beauty, privacy, and functionality of your garden, creating an inviting and secure environment for you and your family.</p>
+    </div>
+</div>
+
+
+<ImageOnLeft
+    
+   
+    image={img2} 
+    imageAlt="Fence installer"
+    height={580} 
+    width={600}
+    href="/contact"
+    linkText="GET A FREE QUOTE TODAY"
+  >
+    <Fragment slot="content" >
+  
+      <p class="mb-4">
+        We offer a variety of garden fencing styles to suit every taste and requirement:
+      </p>
+      <ul class="py-2 list-none list-inside border-t border-b mt-6 mb-4">
+        <li><span class="font-bold">Traditional Wood Fencing:</span> Ideal for those who appreciate the classic look of natural wood. Our wooden fences are made from high-quality timber, treated to withstand the elements and ensure longevity. Choose from picket, panel, or lattice designs to complement your garden's aesthetic.
+        </li>
+        <li><span class="font-bold">Decorative Metal Fencing:</span> For a touch of elegance and durability, our metal garden fences are perfect. Available in wrought iron, steel, and aluminium, these fences provide robust security while adding a decorative element to your garden.
+        </li>
+
+      </ul>  
+      <p class="mb-4">
+For more details about these and all other types of garden fences we provide, get in touch today to arrange a FREE no obligation home survey and quote in Tilbury.
+      </p>
+ 
+    </Fragment>
+  </ImageOnLeft>
+
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
+    <div class="mx-auto lg:text-center">
+      <h2 class="block lg:text-center font-bold text-brand-primary text-2xl lg:text-4xl">Choosing the Right Garden Fence in Tilbury</h2>
+      
+      <p class="mt-6 lg:text-lg  text-gray-600"> Choosing the right garden fence can bring numerous benefits, enhancing both the functionality and aesthetics of your outdoor space.</p>
+    </div>
+</div>
+
+  <ImageOnRight
+    
+   
+  image={img4} 
+  imageAlt="Fence installer"
+  height={580} 
+  width={600}
+  href="/contact"
+  linkText="GET A FREE QUOTE TODAY"
+>
+  <Fragment slot="content" >
+
+    <ul class="list-none list-inside mb-4">
+      <li class="mb-2"><span class="font-bold">Enhanced Privacy: </span> Create a secluded oasis where you can relax and enjoy your garden without the intrusion of neighbours or passersby.
+      </li>
+      <li class="mb-2"><span class="font-bold"> Improved Security: </span>A sturdy garden fence acts as a deterrent to trespassers and keeps your property secure. We use only the highest quality fencing panels in our installations.
+      </li>
+      <li class="mb-2"><span class="font-bold"> Aesthetic Appeal: </span>Our beautifully designed fences can enhance the overall look of your garden, adding character and charm.
+      </li>
+      <li class="mb-2"><span class="font-bold"> Boundary Definition:  </span>Clearly define the borders of your property, helping to prevent disputes with neighbours and providing a structured look to your garden.
+      </li>
+      <li class="mb-2"><span class="font-bold"> Protection for Plants and Pets: </span> Keep your garden safe from wildlife and ensure your pets have a secure area to play.
+      </li>
+    </ul>  
+    
+
+  </Fragment>
+</ImageOnRight>
+
+
+</div>
+
+  <CallToAction
+    background={heroBg}  
+    title="Start Your Fencing Project in Tilbury Today"
+    ImageAlt="Expert Fence installation"
+    linkText="START YOUR PROJECT TODAY"
+    href="/contact">
+    <div slot="ctaContent"> 
+      <p class="mt-6 mb-4 lg:text-lg">
+        Unlock the potential of your home with our expert fencing solutions at Perry's Fencing & Landscaping. Whether you're looking to enhance security, boost curb appeal, or create a personalized oasis, our dedicated team is ready to transform your vision into reality.
+    </p>
+      <p class="mb-4 lg:text-lg">
+        Ready to experience the difference of a professionally installed fence? Contact us today for a consultation and discover how Perry's Fencing & Landscaping can elevate the aesthetic and security of your property. Let's embark on the journey to redefine your space with quality craftsmanship, reliability, and a commitment to exceeding your expectations. Elevate your property – reach out to Perry's Fencing & Landscaping now!
+      </p>
+    </div>
+  </CallToAction>
+
+
+
+
+  <ImageOnLeft
+    
+   title="Fencing Installation Process"
+  image={img3} 
+  imageAlt="Fencing Installation Process professional service guaranteed"
+  height={580} 
+  width={600}
+  href="/contact"
+  linkText="GET A FREE QUOTE TODAY"
+>
+  <Fragment slot="content" >
+<p class="mb-4">Our streamlined process ensures a seamless experience from start to finish:
+
+</p>
+    <ul class="list-none list-inside mb-4">
+      <li class="mb-2"><span class="font-bold">Initial Consultation: </span> Schedule a free on-site consultation where we assess your fencing needs, discuss your preferences, and provide expert recommendations.
+      </li>
+      <li class="mb-2"><span class="font-bold"> Customized Designs: </span>Based on our consultation, we develop tailored fencing solutions that match your property's aesthetics and functional needs. We work closely with you to ensure the design meets your expectations.
+      </li>
+      <li class="mb-2"><span class="font-bold"> Professional Installation: </span>Our skilled craftsmen handle every aspect of the installation with precision and care. We use high-quality materials and advanced techniques to ensure your fence is built to last.
+      </li>
+    
+    </ul>  
+    
+
+  </Fragment>
+</ImageOnLeft>
+
+
+
+
+
+
+  <div class="bg-white my-10 lg:mt-20 lg:mb-20"> 
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto lg:text-center">
+        <h2 class="block lg:text-center font-bold text-brand-primary text-2xl lg:text-4xl">The Importance of Professional Fence Installation</h2>
+        
+        <p class="mt-6 lg:text-lg  text-gray-600">When it comes to securing and enhancing your property with a fence, the choice of the installer is paramount. Opting for an experienced and professional fence installer can make a world of difference in the overall performance and longevity of your fencing investment.</p>
+      </div>
+      <div class="mx-auto mt-16 lg:max-w-7xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold  text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+                  
+                  
+              </div>
+              <span class="text-xl">Precision and Expertise</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+                Professional installers bring a wealth of knowledge and expertise to the table. From accurate measurements to meticulous planning, they ensure every aspect of your fence is executed with precision. This not only enhances the functionality of the fence but also contributes to its aesthetic appeal.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              <span class="text-xl">Compliance and Regulations</span>
+
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+                
+                Navigating local regulations and compliance standards can be a complex task. Professional installers are well-versed in these requirements, ensuring that your fence not only meets but exceeds all necessary regulations. This is particularly crucial for avoiding potential legal issues and ensuring the longevity of your fence.
+                </dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+             <span class="text-xl"> Quality Craftsmanship</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+               
+                Experienced installers are equipped with the skills and craftsmanship needed to deliver a high-quality fence. From selecting the right materials to employing the best construction practices, professionals take pride in their workmanship, resulting in a fence that stands the test of time.
+                </dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              <span class="text-xl">Efficiency and Timeliness</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+                
+                Time is of the essence, and professional installers understand the value of efficiency. With a streamlined process, they can complete the installation promptly without compromising on the quality of work. This ensures that you can enjoy the benefits of your new fence sooner rather than later.
+                </dd>
+          </div>
+
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              <span class="text-xl"> Peace of Mind</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+               
+                Choosing a professional installer provides peace of mind. It eliminates the uncertainties and potential challenges associated with DIY installations or inexperienced contractors. With professionals at the helm, you can rest assured that your investment is in capable hands.
+                
+                </dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              <span class="text-xl">Enhanced Property Value</span>
+            </dt>
+            <dd class="mt-2 text-base text-gray-600">
+                
+                A professionally installed fence not only adds to the visual appeal of your property but also contributes to its overall value. Potential homebuyers often view a well-installed fence as a sign of care and attention to detail, making your property more attractive in the real estate market. This enhanced property value can be a significant return on your investment in professional fence installation.
+                </dd>
+          </div>
+
+          
+        </dl>
+        <p class="mt-14 lg:text-lg  text-gray-600 text-center"> In summary, the importance of hiring an experienced and professional fence installer cannot be overstated. It is a crucial step towards ensuring a durable, aesthetically pleasing, and compliant fencing solution that adds value to your property.</p>
+      </div>
+      
+    </div>
+   
+  </div>
+
+  
+
+
+
+  <div class="bg-brand-primary max-w-7xl  mb-20 py-10">
+    <h2 class="text-white mb-4 text-2xl lg:text-4xl font-bold text-center">Our Satisfied Customers</h2>
+    <div class="mx-auto  max-w-7xl md:grid md:grid-cols-2 md:px-6 lg:px-8">
+      <div class="px-6 md:flex md:flex-col md:pl-0 md:pr-10 lg:pr-16">
+        
+        <blockquote class="mt-6 md:flex md:flex-grow md:flex-col">
+          <div class="relative text-lg font-medium text-white md:flex-grow">
+            <svg class="absolute left-0 top-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-600" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+            </svg>
+            <h3 class="text-xl lg:text-2xl text-white relative font-bold mb-2">Very professional and worked very efficiently</h3>
+
+            <p class="relative">Ben, James and team completed tricky landscaping work for us creating two patios on a two tiered garden. Very professional and worked very efficiently. Clear what pride they took in their work even down to how they looked after working area during works. Have booked in for some fencing work in April.
+
+            </p>
+          </div>
+    
+        </blockquote>
+      </div>
+      <div class="px-6 md:pl-10 md:pr-0 lg:pl-16">
+     
+        <blockquote class="mt-6 md:flex md:flex-grow md:flex-col">
+          <div class="relative text-lg font-medium text-white md:flex-grow">
+            <svg class="absolute left-0 top-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-600" fill="currentColor" viewBox="0 0 32 32">
+              <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+            </svg>
+            <h3 class="text-xl lg:text-2xl text-white relative font-bold mb-2">Would recommend to anyone</h3>
+            <p class="relative">Needed a new garden fence. James came round and gave me a few suggestions of which type of fence would be best. Very professional and a reasonable quote. They turned up on the day specified and worked very hard to get the fence done in two days. Would recommend to anyone and I will be using them again in the future.
+            </p>
+          </div>
+      
+        </blockquote>
+      </div>
+
+      <div class="px-6 md:flex md:flex-col md:pl-0 md:pr-10 lg:pr-16">
+        
+        <blockquote class="mt-6 md:flex md:flex-grow md:flex-col">
+          <div class="relative text-lg font-medium text-white md:flex-grow">
+            <svg class="absolute left-0 top-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-600" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+            </svg>
+            <h3 class="text-xl lg:text-2xl text-white relative font-bold mb-2">Excellent standard and efficient</h3>
+
+            <p class="relative">Right from the beginning James was professional, communicated effectively.
+              Work was done to an excellent standard and efficient. Would throughly recommend them.
+            </p>
+          </div>
+        
+        </blockquote>
+      </div>
+      <div class="px-6 md:pl-10 md:pr-0 lg:pl-16">
+     
+        <blockquote class="mt-6 md:flex md:flex-grow md:flex-col">
+          <div class="relative text-lg font-medium text-white md:flex-grow">
+            <svg class="absolute left-0 top-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-600" fill="currentColor" viewBox="0 0 32 32">
+              <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+            </svg>
+            <h3 class="text-xl lg:text-2xl text-white relative font-bold mb-2">Excellent service</h3>
+            <p class="relative">Excellent service. They installed our patio and retaining walls. I would definitely recommend these guys to anyone.
+            </p>
+          </div>
+         
+        </blockquote>
+      </div>
+
+      <div class="px-6 lg:px-0">
+     
+        <blockquote class="mt-6 md:flex md:flex-grow md:flex-col">
+          <div class="relative text-lg font-medium text-white md:flex-grow">
+            <svg class="absolute left-0 top-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-600" fill="currentColor" viewBox="0 0 32 32">
+              <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+            </svg>
+            <h3 class="text-xl lg:text-2xl text-white relative font-bold mb-2">Excellent job</h3>
+            <p class="relative">We had our decking, patio and fencing supplied and installed by James and his team. Excellent job they were very considerate and polite. Highly recommend.
+
+            </p>
+          </div>
+         
+        </blockquote>
+      </div>
+
+      <div class="px-6  md:pl-10 md:pr-0 lg:pl-16">
+     
+        <blockquote class="mt-6 md:flex md:flex-grow md:flex-col">
+          <div class="relative text-lg font-medium text-white md:flex-grow">
+            <svg class="absolute left-0 top-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-600" fill="currentColor" viewBox="0 0 32 32">
+              <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+            </svg>
+            <h3 class="text-xl lg:text-2xl text-white relative font-bold mb-2">Helpful and polite</h3>
+            <p class="relative">Really good service, everyone was very helpful and polite reached my needs with what I wanted doing. would recommend to everyone.
+
+            </p>
+          </div>
+         
+        </blockquote>
+      </div>
+
+
+    </div>
+
+</div>
+
+
+
+  <ImageOnRight
+    
+  title="Comprehensive Fencing Solutions Tailored to Your Needs"
+  image={fence2} 
+  imageAlt="Fence panel installers"
+  height={700} 
+  width={600}
+>
+  <Fragment slot="content" >
+    <p class="my-4">
+        We understand that every property is unique, and so are its fencing requirements. Whether you're in need of sturdy fence panels, classic wooden fences, or robust garden fencing, our local fencing contractors are here to deliver quality craftsmanship that stands the test of time.
+   </p>
+   <h3 class="text-brand-primary text-xl font-bold pb-4">Diverse Materials for Your Vision</h3>
+   <p class="lg:text-xl">From durable wooden fences to modern fence panels, we offer an array of fencing materials to suit your style and budget. Our expertise extends to both wood fencing, known for its timeless appeal, and durable options like concrete posts for added strength and longevity.
+   </p>
+
+   <h3 class="text-brand-primary text-xl  font-bold py-4">Professional Fence Installation and Cost Transparency</h3>
+   <p class="lg:text-xl">
+     Our experienced fence fitters take pride in providing expert installation services, ensuring that each component, including fence posts and panels, is meticulously placed for optimum functionality. Worried about fencing cost? Rest assured, we offer transparent pricing, guiding you through the process to make informed decisions that align with your budget.
+     
+   </p>
+
+  </Fragment>
+</ImageOnRight>
+
+<p class="lg:text-xl  text-gray-700  max-w-7xl mx-auto px-6"> Whether you're looking to enhance your property's security, define boundaries with garden fencing, or explore the durability of wood fencing, our local fencing contractors are dedicated to bringing your vision to life. Contact us today to discuss your fencing project and discover the tailored solutions we have in store for you.</p>
+  
+<div class="mx-auto bg-gray-800 px-6 lg:mt-20 overflow-hidden py-20">
+    <h2 class="text-white text-2xl lg:text-6xl font-bold  mb-10">Our Work</h2>
+  <p class="text-white text-lg lg:text-xl">Take a look at some of our projects and the team at work.</p>
+  <div
+  class="mt-12 grid w-full lg:gap-10 lg:grid-cols-3"
+  >
+  <div class="flex flex-col  mb-10">
+    <Image
+      src={work1}
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp"
+    />
+
+  </div>
+
+  
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work2}
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp"
+    />
+
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work3}
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+        format="webp"
+    />
+ 
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work4}
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp" 
+    />
+ 
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work5}
+      class="overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+      format="webp" 
+    />
+
+  </div>
+  
+  <div class="flex flex-col  mb-10">
+      <Image
+      src={work6}
+      class="w-full h-full overflow-hidden rounded-lg"
+      alt="Rubber roofs - durable EPDM roofing"
+      width={600}
+      height={600}
+        format="webp" 
+    />
+ 
+  </div>
+
+  
+  </div>
+
+
+  
+  </div>
+
+
+  <GetaQuote 
+background={img1}
+href="/contact"
+linkText="Talk to an Expert"
+>
+
+<div slot="quoteContent"> 
+  <p>
+    Perry's Fencing & Landscaping offer a FREE home survey and no-obligation quote service. Our espert team will come to your property, assess your specific needs, and discuss your project goals. You'll receive expert advice tailored to your requirements and a detailed quote with transparent pricing, allowing you to make informed decisions about your project.
+  </p>
+
+</GetaQuote>
+
+ 
+</Layout>  
+

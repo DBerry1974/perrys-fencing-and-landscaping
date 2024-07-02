@@ -1,0 +1,116 @@
+---
+export const prerender = true;
+const town = "{town}";
+import { Image } from 'astro:assets'
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero/LandingHero.astro";
+import WideHero from "../../components/Hero/Hero.astro";
+import ImageBlock from "../../components/ImageBlock.astro";
+import DefaulContentBlock from "../../components/Content/DefaultContentBlock.astro"; 
+import ImageOnRight from "../../components/Content/ImageOnRight.astro";
+import ImageOnLeft from "../../components/Content/ImageOnLeft.astro";
+import CallToAction from "../../components/CallToAction.astro";
+import Button from "../../components/Buttons/PrimaryButton.astro";
+import SubTitle from "../../components/Headings/SubTitle.astro";
+import heroBg from "../../assets/images/fence1.png";
+import extension3 from "../../assets/images/extension3.png";
+import fence1 from "../../assets/images/fence1.png";
+import fence2 from "../../assets/images/fence2.jpg";
+import fence3 from "../../assets/images/fence3.jpg";
+import fence5 from "../../assets/images/fence5.jpg";
+import fence4 from "../../assets/images/fence4.jpg";
+import fence6 from "../../assets/images/fence6.png";
+import fenceRepair from "../../assets/images/fence-repair.png";
+import fenceMaint from "../../assets/images/fence-maintenance.png";
+import clearance from "../../assets/images/clearance.png";
+
+import returf1 from "../../assets/images/returf1.png";
+import decking1 from "../../assets/images/decking1.png";
+import lawn1 from "../../assets/images/lawn1.png";
+import design1 from "../../assets/images/design1.png";
+import work1 from "../../assets/images/work1.png";
+import work2 from "../../assets/images/work2.png";
+import work3 from "../../assets/images/work3.png";
+import work4 from "../../assets/images/work4.png";
+import work5 from "../../assets/images/work5.png";
+import work6 from "../../assets/images/work6.png";
+import work7 from "../../assets/images/work7.png";
+
+import FenceInstallerEssex from "../../components/LocationData/FenceInstallerEssex";
+
+---
+
+<Layout title={`Perry's Fencing & Landscaping Services | Fence Installer in Essex. Quality fencing services.`} description={`Providing premium Garden and Landscaping Services. Artificial lawns, Decking, Garden & Patios, Fencing & more in Essex. Free site survey and quote.`}>
+
+
+
+
+<Hero
+title="Fence Installer Essex"
+sub="Quality Fence Installation Services in Essex"
+linkText="Get a Quote Today"
+href="/contact"
+image={heroBg}
+
+/>
+<div class="mx-auto max-w-7xl px-6 lg:mt-10">
+
+
+  
+    <div
+    class="mt-12 grid w-full lg:gap-10 lg:grid-cols-2"
+    >
+    <div class="flex flex-col mb-10 pb-4">
+       <h1 class="text-2xl lg:text-4xl font-bold text-brand-primary">Fence Installer in Essex</h1>
+    
+       <p class="mt-6 lg:text-lg  text-gray-600">Perry's Fencing & Landscaping Services are professional landscapers with many years of experience of working on fencing and landscaping projects in Essex.
+
+        </p>
+        <p class="mt-6 lg:text-lg  text-gray-600">
+            With a commitment to a customer-friendly approach, Perry's Fencing & Landscaping Services offers free consultations to discuss your vision, preferences, and specific needs.
+            </p>
+            <p class="mt-6 lg:text-lg  text-gray-600">
+                Our collaborative process ensures that your outdoor space reflects your individual style and enhances the beauty of your property. Whether you're dreaming of a tranquil patio, a vibrant garden, or a functional deck space, Perry's Fencing & Landscaping Services is dedicated to providing practical and personalised landscaping solutions in Essex.
+                </p>
+
+    </div>
+
+    <div class="flex flex-col overflow-hidden mb-10 pb-4 ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d631698.3349294134!2d-0.02100567607407473!3d51.79571514215137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d85627fe870dd3%3A0x4257cb3847ee5079!2sEssex!5e0!3m2!1sen!2suk!4v1717058134491!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    </div>
+
+</div>
+<FenceInstallerEssex />
+
+  
+<div class="bg-white lg:mb-10 my-20">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto lg:text-center">
+      
+
+        <p class="mt-6 text-5xl font-bold text-brand-primary">Can't find your town?
+            </p>
+            <p class="mt-6 lg:text-lg  text-gray-600">Complete our short online survey and we will be in touch to arrange a visit.
+                </p>
+
+<Button href="https://2wg4hkpfq09.typeform.com/to/KuG0wTg8">COMPLETE ONLINE SURVEY</Button>
+
+<p class="my-20 text-xl lg:text-4xl text-center font-bold">Want to speak to an expert today? <br />Call us now on <a href="tel:07917238662">07917 238662</a></p>
+
+
+      </div>
+       </div>
+  </div>
+
+
+
+
+
+		
+
+
+
+</Layout>  
+

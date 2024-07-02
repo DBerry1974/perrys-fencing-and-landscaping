@@ -1,4 +1,11 @@
-const essexTowns = [
+const fs = require('fs');
+const path = require('path');
+
+const outputFolder = './';
+
+
+// Array of towns
+const towns = [
     'Alresford',
     'Asheldham',
     'Barking',
@@ -85,6 +92,33 @@ const essexTowns = [
     'Wivenhoe',
     'Woodford Green',
     'Writtle',
-];
+  ];
 
-export default essexTowns;
+// Template path
+const templatePath = path.join(__dirname, '../landing-templates/FenceInstaller.astro');
+
+// Read the template content
+const templateContent = fs.readFileSync(templatePath, 'utf8');
+
+// Create the output directory if it doesn't exist
+if (!fs.existsSync(outputFolder)) {
+  fs.mkdirSync(outputFolder, { recursive: true });
+}
+
+// Generate pages dynamically
+towns.forEach((town) => {
+  // Convert town for URL (lowercase with hyphen)
+  const urlTown = town.toLowerCase().replace(/\s+/g, '-');
+
+  // Define the output path
+  const outputPath = path.join(outputFolder, `${urlTown}.astro`);
+
+  // Replace {town} in the template content with the actual town name
+  const pageContent = templateContent.replace(/{town}/g, town).replace(/{urlTown}/g, urlTown);
+
+  // Write the modified content to the output file
+  fs.writeFileSync(outputPath, pageContent, 'utf8');
+  console.log(`Generated page for ${town} at ${outputPath}`);
+});
+
+console.log('Pages generated successfully.');
